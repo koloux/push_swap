@@ -6,10 +6,25 @@ nhuber : Nicolas Huber <br />
 
 #Learning Goals
 Sorting algorithms
-<table>
+<table style = "width:100%">
 <tr>
-<td>hi</td>
-<td>you</td>
+<td><em><b>ALGORITHM</td>
+<td>TIME COMPLEXITY</b></em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AVERAGE</td>
+<td>BEST</td>
+<td>WORST</td>
+</tr>
+<tr>
+<td></td>
+<td>AVERAGE</td>
+<td>BEST</td>
+<td>WORST</td>
+</tr>
 <table />
 
 #Convention
