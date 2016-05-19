@@ -15,9 +15,9 @@ Sorting algorithms
 </tr>
 <tr>
 <td></td>
-<td><i>average</i></td>
-<td><i>best</i></td>
-<td><i>worst</i></td>
+<td><center><i>average</i></td>
+<td><center><i>best</i></td>
+<td><center><i>worst</i></td>
 </tr>
 <table />
 
