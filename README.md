@@ -6,24 +6,18 @@ nhuber : Nicolas Huber <br />
 
 #Learning Goals
 Sorting algorithms
-<table style = "width:100%">
+<table>
 <tr>
-<td><em><b>ALGORITHM</td>
-<td>TIME COMPLEXITY</b></em></td>
+<td><b>ALGORITHM</b></td>
+<td><b>TIME COMPLEXITY</b></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>AVERAGE</td>
-<td>BEST</td>
-<td>WORST</td>
-</tr>
-<tr>
-<td></td>
-<td>AVERAGE</td>
-<td>BEST</td>
-<td>WORST</td>
+<td><i>average</i></td>
+<td><i>best</i></td>
+<td><i>worst</i></td>
 </tr>
 <table />
 
