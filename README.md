@@ -5,7 +5,12 @@
 nhuber : Nicolas Huber <br />
 
 #Learning Goals
-Sorting algorithms
++ sorting algorithm
+
+#Convention
++ [42 Norme](./subject/norme.pdf).<br />
+
+#My own info
 <table>
 <tr>
 <th><b>ALGORITHM</b></th>
@@ -38,9 +43,3 @@ Sorting algorithms
 <td><i>O(nlog(n))</i></td>
 </tr>
 <table />
-
-#Convention
-+ [42 Norme](./subject/norme.pdf).<br />
-
-#My own info
-+ Sorting algorithm.<br />
