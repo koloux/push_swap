@@ -5,6 +5,7 @@
 nhuber : Nicolas Huber <br />
 
 #Learning Goals
++ stack data structure
 + sorting algorithm
 
 #Convention
