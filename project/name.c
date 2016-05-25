@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 13:19:10 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/20 15:21:48 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/05/25 11:14:03 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@ void	fill(t_stack *stk, char **nb, int len)
 {
 	while (nb[len] && len > 0)
 	{
-		if (!(error_nbr(nb[len])))
-			stk->stack[stk->top++] = ft_atoi(nb[len]);
+		if (error_nbr(nb[len]))
+			return ;
+		else
+			stk->stack[++stk->top] = ft_atoi(nb[len]);
 		len--;
 	}
 }

@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack.c                                            :+:      :+:    :+:   */
+/*   solve.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/19 19:10:14 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/25 11:27:31 by nhuber           ###   ########.fr       */
+/*   Created: 2016/05/25 11:14:07 by nhuber            #+#    #+#             */
+/*   Updated: 2016/05/25 13:22:27 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stack	*stack_construct(int size)
+void	solve(t_stack *stk_a, t_stack *stk_b)
 {
-	t_stack	*new;
-	int		*stack;
+	int	max;
 
-	if (size != 0 &&
-			(new = (t_stack *)malloc(sizeof(t_stack))) != NULL)
+	max = -2147483648;
+	while (stk_a->top >= 0)
 	{
-		if ((stack = (int *)malloc(sizeof(int) * size)) != NULL)
-		{
-			new->stack = stack;
-			new->top = -1;
-			new->max = -1;
-		}
+		max = (max < stk_a->stack[stk_a->top] ? stk_a->stack[stk_a->top]: max);
+		if (stk_b->stack[stk_b->max] != stk_a->stack[stk_a->top])
+			operate_push(stk_a, stk_b);
 		else
-			ft_memdel((void *)&new);
-		return (new);
+			stk_a->stack[stk_a->top--] = 0;
 	}
-	return (NULL);
+	while (stk_b->top >= 0 && stk_b->stack[stk_b->top] > stk_b->max)
+		operate_push(stk_b, stk_a);
+	stk_b->stack[++stk_b->max] = max;
+	stk_b->top++;
 }
-

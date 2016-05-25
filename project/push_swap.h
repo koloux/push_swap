@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/20 15:21:51 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/05/25 11:40:38 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define PUSH_SWAP_H
 # include "libft.h"
 # include <stdlib.h>
+# include <stdio.h>
 
 typedef struct	s_stack
 {
@@ -31,6 +32,12 @@ void	stack_destruct(t_stack *stack);
 
 void	fill(t_stack *stk, char **nb, int len);
 int		error_nbr(char *nbr);
+
+/*
+**	SOLVE
+*/
+
+void	solve(t_stack *stk_a, t_stack *stk_b);
 
 /*
 **	OPERATE
