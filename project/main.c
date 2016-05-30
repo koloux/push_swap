@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/30 11:44:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/30 19:31:37 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/05/30 19:46:59 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ int		main(int ac, char **av)
 	t_stack	*stk_b;
 
 	stk_a = stack_construct();
-	stk_b = stack_construct();
+	stk_b = stack_construct();	
+	if (ac < 1)
+		pstk(stk_a->items, ac);	
 	i = 1;
 	while (i < ac)
 		stk_a->push_back(stk_a, ft_atoi(av[i++]));
