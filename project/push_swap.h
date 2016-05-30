@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/25 11:40:38 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/05/30 12:47:15 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,34 +16,24 @@
 # include <stdlib.h>
 # include <stdio.h>
 
+typedef struct		s_item
+{
+	int				val;
+	struct s_item	*next;
+	struct s_item	*prev;
+}					t_item;
+
 typedef struct	s_stack
 {
-	int			*stack;
-	int			top;
-	int			max;
+	void		(*push_back)(void *, int);
+	void		(*push_front)(void *, int);
+	void		(*pop)(void *);
+	void		(*shift)(void *);
+	t_item		*items;
+	char		*cmd;
 }				t_stack;
 
-/*
-**	STACK
-*/
-
-t_stack	*stack_construct(int size);
-void	stack_destruct(t_stack *stack);
-
-void	fill(t_stack *stk, char **nb, int len);
-int		error_nbr(char *nbr);
-
-/*
-**	SOLVE
-*/
-
-void	solve(t_stack *stk_a, t_stack *stk_b);
-
-/*
-**	OPERATE
-*/
-
-void	operate_swap(t_stack *stk);
-void	operate_push(t_stack *stk_a, t_stack *stk_b);
+t_stack			*stack_construct(void);
+void			solve_stack(t_stack *stk_a, t_stack *stk_b);
 
 #endif

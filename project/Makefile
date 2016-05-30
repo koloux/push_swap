@@ -16,7 +16,7 @@ NAME = push_swap
 HEADER = push_swap.h
 F_DIR = ./
 L_DIR = libft
-FILES = stack.c main.c name.c operate.c solve.c
+FILES = stack.c main.c solve.c 
 TMP = Makefile~  $(F_DIR)/header.h~ $(NAME)~ $(FILES:.c=.c~)
 
 all : $(NAME)
@@ -45,7 +45,7 @@ test :
 	@echo "\t"- Compiler : $(CC)
 	@echo "\t"- Flags : $(FLAGS)
 	@$(CC) -o $(NAME) $(FLAGS) $(FILES) -I $(L_DIR) -L $(L_DIR) -lft
-	@./$(NAME) 1 2 3 4
+	@./$(NAME) 3 7 4 9 5 2 6 1
 
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"

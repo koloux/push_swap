@@ -5,43 +5,38 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/20 13:09:59 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/25 13:22:25 by nhuber           ###   ########.fr       */
+/*   Created: 2016/05/30 11:44:07 by nhuber            #+#    #+#             */
+/*   Updated: 2016/05/30 19:31:37 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pstk(t_stack *stk, int op)
+static void	pstk(t_item *stk, int nb)
 {
-	int i = stk->top;
-	printf("======%c======\n", (op == 1 ? 'A': 'B'));
-	while (i >= 0)
+	int i = nb - 1;
+
+	while (i > 0)
 	{
-		printf("|%d|", stk->stack[i]);
+		printf("|%d|", stk->val);
+		stk = stk->next;
 		i--;
 	}
-	printf("\nposition(top)(max) :{%d}{%d}", stk->top, stk->max);
-	printf("\n=============\n");
+	printf("\n");
 }
 
 int		main(int ac, char **av)
 {
-	t_stack	*stack_a;
-	t_stack *stack_b;
+	int		i;
+	t_stack	*stk_a;
+	t_stack	*stk_b;
 
-	stack_a = stack_construct(ac - 1);
-	stack_b = stack_construct(ac - 1);
-	fill(stack_a, av, (ac - 1));
-	int i = 3;
-	while (i < 7)
-	{	
-		if (i > 2)
-		{
-			pstk(stack_a, 1);
-			pstk(stack_b, 2);
-		}
-		solve(stack_a, stack_b);
-			i++;
-	}
+	stk_a = stack_construct();
+	stk_b = stack_construct();
+	i = 1;
+	while (i < ac)
+		stk_a->push_back(stk_a, ft_atoi(av[i++]));
+	//error handling here
+	solve_stack(stk_a, stk_b);
+	return (0);
 }

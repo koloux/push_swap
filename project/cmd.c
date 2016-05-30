@@ -1,37 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operate.c                                          :+:      :+:    :+:   */
+/*   cmd.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/20 13:57:38 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/25 13:22:32 by nhuber           ###   ########.fr       */
+/*   Created: 2016/05/30 10:48:55 by nhuber            #+#    #+#             */
+/*   Updated: 2016/05/30 11:35:04 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	operate_swap(t_stack *stk)
+void	cmd_add(t_stack *stack, char *cmd)
 {
-	int	tmp;
+	char	*tmp;
+	char	*tmp2;
 
-	if (stk->top >= 1)
+	if (stack->cmd == NULL)
 	{
-		tmp = stk->stack[stk->top - 1];
-		stk->stack[stk->top - 1] = stk->stack[stk->top];
-		stk->stack[stk->top] = tmp;
+		if ((tmp = ft_strdup(cmd)) != NULL)
+			stack->cmd = tmp;
+	}
+	else
+	{
+		tmp = stack->cmd;		
+		if ((tmp2 = ft_strjoin(tmp, cmd)) != NULL)
+			stack->cmd = tmp2;
+		free(tmp);
 	}
 }
 
-void	operate_push(t_stack *stk_a, t_stack *stk_b)
+void	cmd_print(t_stack *stack)
 {
-	int	tmp;
+	int	i;
 
-	if (stk_a->top >= 0)
-	{
-		tmp = stk_a->stack[stk_a->top];
-		stk_a->stack[stk_a->top--] = 0;
-		stk_b->stack[++stk_b->top] = tmp;
-	}
+	i = 0;
+	while (stack->cmd[i])
+		i++;
+	write(1, &(stack->cmd), i);
 }
