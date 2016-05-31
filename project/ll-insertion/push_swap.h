@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/30 12:47:15 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/05/31 19:07:13 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define PUSH_SWAP_H
 # include "libft.h"
 # include <stdlib.h>
-# include <stdio.h>
+# include <unistd.h>
 
 typedef struct		s_item
 {
@@ -35,5 +35,6 @@ typedef struct	s_stack
 
 t_stack			*stack_construct(void);
 void			solve_stack(t_stack *stk_a, t_stack *stk_b);
+int				error(int ac, char **av);
 
 #endif

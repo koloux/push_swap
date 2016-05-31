@@ -16,7 +16,7 @@ NAME = push_swap
 HEADER = push_swap.h
 F_DIR = ./
 L_DIR = libft
-FILES = stack.c main.c solve.c 
+FILES = main.c 
 TMP = Makefile~  $(F_DIR)/header.h~ $(NAME)~ $(FILES:.c=.c~)
 
 all : $(NAME)
