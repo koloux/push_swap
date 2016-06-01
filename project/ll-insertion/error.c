@@ -6,59 +6,63 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 18:22:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/31 19:38:26 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/01 11:41:08 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
-static int	error_min_max(char *av)
+static int	error_duplicate(int *nbrs, int ac)
 {
-	int	nb;
+	int	i;
+	int	j;
 
-	nb = ft_atoi(av);
-	if ((nb > 0 && av[0] == '-') || (nb < 0 && av[0] != '-'))
-		return (1);
+	i = 0;
+	while (i < ac)
+	{
+		j = i + 1;
+		while (nbrs[i] != nbrs[j] && j < ac)
+			j++;
+		if (j != ac)
+			return (1);
+		i++;
+	}
 	return (0);
 }
 
-static int	error_not_int(char *av)
+static int	error_not_int(char *av, int nb)
 {
-	int	len;
-	int	i;
+	int	strlen;
+	int	nblen;
 
-	len = ft_strlen(av);
-	i = 0;
-	if (av[0] == '-')
+	strlen = ft_strlen(av);
+	if ((nb > 0 && av[0] == '-') || (nb < 0 && av[0] != '-'))
+		return (1);
+	nblen = (nb > 0 ? 0 : 1);
+	while (nb != 0)
 	{
-		len--;
-		i++;
+		nb /= 10;
+		nblen++;
 	}
-	if (len == 10)
-		len += error_min_max(av);
-	if (len < 10)
-	{
-		while (ft_isdigit(av[i]))
-			i++;
-		len += (i != len + 1 ? 1 : 0);
-	}
-	return (len > 10 ? 1 : 0);
+	return (nblen != strlen ? 1 : 0);
 }
 
 int			error(int ac, char **av)
 {
 	int	i;
 	int	er;
+	int	nbrs[ac];
 
 	i = 0;
 	er = 0;
 	while (av[i])
 	{
-		if (error_not_int(av[i]))
+		nbrs[i] = ft_atoi(av[i]);
+		if (error_not_int(av[i], nbrs[i]))
 			er++;
 		i++;
 	}
+	er += error_duplicate(nbrs, ac);
 	if (er != 0 || ac < 2)
 		ft_putstr_fd("Error\n", 1);
 	return (er);

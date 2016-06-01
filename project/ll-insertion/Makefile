@@ -45,7 +45,7 @@ test :
 	@echo "\t"- Compiler : $(CC)
 	@echo "\t"- Flags : $(FLAGS)
 	@$(CC) -o $(NAME) $(FLAGS) $(FILES) -I $(L_DIR) -L $(L_DIR) -lft
-	@./$(NAME) -a147483649 1 3 6 5 8
+	@./$(NAME) 2 1 3 6 5 8
 
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"

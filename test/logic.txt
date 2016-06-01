@@ -1,0 +1,5 @@
+Althought my algorithm is explained on wikipedia, here are some remarques I noted :
+- Chose an array over a linked list to hold the information of your stack. Truth be told, as a general rule, LL would be better adapted for a stack (removing/adding elements cost less), in the case of our subject, since the number of elements is known (number of arguments : ac), it is better to use an array.
+- Adapt your program depending on the number of arguments.
+
+HAVE FUN CODING !

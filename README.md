@@ -2,7 +2,7 @@
 42 School project - [push_swap](./subject/push_swap.pdf)
 
 #Auteur
-nhuber : Nicolas Huber <br />
+nhuber : Nicolas Huber<br />
 
 #Learning Goals
 + stack data structure
@@ -12,35 +12,9 @@ nhuber : Nicolas Huber <br />
 + [42 Norme](./subject/norme.pdf).<br />
 
 #My own info
-<table>
-<tr>
-<th><b>ALGORITHM</b></th>
-<th><b>TIME COMPLEXITY</b></th>
-<th></th>
-<th></th>
-</tr>
-<tr>
-<td></td>
-<td><b>average</b></td>
-<td><b>best</b></td>
-<td><b>worst</b></td>
-</tr>
-<tr>
-<td>[Quicksort](https://en.wikipedia.org/wiki/Quicksort)</td>
-<td><i>O(nlog(n))</i></td>
-<td><i>O(nlog(n))</i></td>
-<td><i>O(n^2)</i></td>
-</tr>
-<tr>
-<td>[Mergesort](https://en.wikipedia.org/wiki/Merge_sort)</td>
-<td><i>O(nlog(n))</i></td>
-<td><i>O(nlog(n))</i></td>
-<td><i>O(nlog(n))</i></td>
-</tr>
-<tr>
-<td>[Timsort](https://en.wikipedia.org/wiki/Timsort)</td>
-<td><i>O(nlog(n))</i></td>
-<td><i>O(nlog(n))</i></td>
-<td><i>O(nlog(n))</i></td>
-</tr>
-<table />
+- [Quicksort](https://en.wikipedia.org/wiki/Quicksort)<br />
+- [Insertionsort](https://en.wikipedia.org/wiki/Insertion_sort)<br />
+- [logic](./test/logic.txt)<br />
+- [Python scrpit test](./test/tester.py) - credits to [mokolodi1](https://github.com/mokolodi1/push-swap)<br />
+- [Algorithm scheme](http://www.sorting-algorithms.com/)<br />
+- Understanding [sorting algorithms and data structures](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.pdf) - credits to Yale University.<br />

@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/30 09:35:37 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/31 19:37:42 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/01 11:23:30 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,6 @@ t_stack		*stack_construct(void)
 		stk->pop = &stack_pop;
 		stk->shift = &stack_shift;
 		stk->items = NULL;
-		stk->cmd = NULL;
 	}
 	return (stk);
 }

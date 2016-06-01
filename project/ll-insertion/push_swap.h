@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/31 19:07:13 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/01 11:23:08 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ typedef struct	s_stack
 	void		(*pop)(void *);
 	void		(*shift)(void *);
 	t_item		*items;
-	char		*cmd;
 }				t_stack;
 
 t_stack			*stack_construct(void);
