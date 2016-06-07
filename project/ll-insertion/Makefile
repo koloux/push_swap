@@ -49,7 +49,8 @@ test :
 
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"
-	@norminette > ../test/checking && cat ../test/checking | grep -B1 "Error"
+	@norminette | grep -B1 "Error" || true > checking
+	@cat checking
 
 re : fclean all
 

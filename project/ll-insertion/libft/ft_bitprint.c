@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/05 17:22:15 by nhuber            #+#    #+#             */
-/*   Updated: 2016/03/07 13:35:38 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/01 13:56:10 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_bitprint(unsigned int nb)
 		i--;
 		if (sp % 4 == 0)
 			ft_putchar(' ');
-		sp++;	
+		sp++;
 	}
 	ft_putchar('\n');
 }

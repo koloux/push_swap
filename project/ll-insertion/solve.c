@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/30 11:05:10 by nhuber            #+#    #+#             */
-/*   Updated: 2016/05/30 19:31:22 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/01 15:21:22 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	solve_get_min(t_stack *stack)
 static int	solve_sort(t_stack *stack)
 {
 	int		flag;
-	int 	prev;
+	int		prev;
 	t_item	*tmp;
 
 	flag = 0;
