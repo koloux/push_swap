@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 10:14:57 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/07 11:41:01 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/07 16:25:07 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static void	stack_push(void *stack_a, void *stack_b)
 	sa = (t_stk *)stack_a;
 	sb = (t_stk *)stack_b;
 	if (sa->stk->top != -1)
-		sb->stk->nb[sb->stk->top++ + 1] = sa->stk->nb[sa->stk->top++];
+		sb->stk->nb[sb->stk->top++ + 1] = sa->stk->nb[sa->stk->top--];
 	//update op
 }
 
@@ -60,13 +60,28 @@ static void	stack_rotate(void *stack)
 	//update op
 }
 
-static void	stack_reverse()
+static void	stack_reverse(void *stack)
 {
+	t_stk	*this;
+	int		i;
+	int		tmp;
 
+	this = (t_stk *)stack;
+	if (this->stk->top > 0)
+	{
+		i = 0;
+		tmp = this->stk->nb[0];
+		while (i <= this->stk->top)
+		{
+			this->stk->nb[i] = this->stk->nb[i + 1];
+			i++;
+		}
+		this->stk->nb[this->stk->top] = tmp;
+	}
 	//update op
 }
 
-t_stk		*stack_construct(int *nb, int top)
+t_stk		*stack_construct(char **param, int top)
 {
 	t_stk	*stack;
 
@@ -77,8 +92,7 @@ t_stk		*stack_construct(int *nb, int top)
 		stack->rot = &stack_rotate;
 		stack->rev = &stack_reverse;
 		stack->op = NULL;
-		stack->stk->nb = nb;
-		stack->stk->top = top;
+		stack->stk = item_construct(param, top);
 	}
 	return (stack);
 }
