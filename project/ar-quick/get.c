@@ -1,42 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   item.c                                             :+:      :+:    :+:   */
+/*   get.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/06/07 14:53:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/13 17:47:22 by nhuber           ###   ########.fr       */
+/*   Created: 2016/06/13 17:05:55 by nhuber            #+#    #+#             */
+/*   Updated: 2016/06/13 17:30:41 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	*item_nb(char **param, int top)
+int	get_min(t_stk *stack)
 {
 	int	i;
-	int	*nb;
+	int	min;
 
 	i = 0;
-	if ((nb = (int *)ft_memalloc(sizeof(int) * top)) != NULL)
+	min = stack->stk->nb[stack->stk->top];
+	while (i < stack->stk->top)
 	{
-		if (param != NULL)
-		{
-			while (param[i])
-				nb[--top] = ft_atoi(param[i++]);
-		}
+		if (min > stack->stk->nb[i])
+			min = stack->stk->nb[i];
+		i++;
 	}
-	return (nb);
+	return (min);
 }
 
-t_item		*item_construct(char **param, int top)
+int	get_max(t_stk *stack)
 {
-	t_item	*new;
+	int	i;
+	int	max;
 
-	if ((new = (t_item *)ft_memalloc(sizeof(t_item))) != NULL)
+	i = 0;
+	max = stack->stk->nb[stack->stk->top];
+	while (i < stack->stk->top)
 	{
-		new->nb = item_nb(param, top);
-		new->top = (param == NULL ? -1 : --top);
+		if (max < stack->stk->nb[i])
+			max = stack->stk->nb[i];
+		i++;
 	}
-	return (new);
+	return (max);
 }

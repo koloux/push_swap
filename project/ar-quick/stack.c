@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 10:14:57 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/07 16:25:07 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/13 17:47:09 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ static void	stack_swap(void *stack)
 		s->stk->nb[s->stk->top] = s->stk->nb[s->stk->top - 1];
 		s->stk->nb[s->stk->top - 1] = tmp;
 	}
-	//update op
 }
 
 static void	stack_push(void *stack_a, void *stack_b)
@@ -36,7 +35,6 @@ static void	stack_push(void *stack_a, void *stack_b)
 	sb = (t_stk *)stack_b;
 	if (sa->stk->top != -1)
 		sb->stk->nb[sb->stk->top++ + 1] = sa->stk->nb[sa->stk->top--];
-	//update op
 }
 
 static void	stack_rotate(void *stack)
@@ -57,7 +55,6 @@ static void	stack_rotate(void *stack)
 		}
 		this->stk->nb[0] = tmp;
 	}
-	//update op
 }
 
 static void	stack_reverse(void *stack)
@@ -78,7 +75,6 @@ static void	stack_reverse(void *stack)
 		}
 		this->stk->nb[this->stk->top] = tmp;
 	}
-	//update op
 }
 
 t_stk		*stack_construct(char **param, int top)

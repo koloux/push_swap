@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 14:47:27 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/07 14:52:38 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/13 17:45:04 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	cmd_add(t_stk *stack, char *cmd)
 	}
 	else
 	{
-		tmp = stack->op;		
+		tmp = stack->op;
 		if ((tmp2 = ft_strjoin(tmp, cmd)) != NULL)
 			stack->op = tmp2;
 		free(tmp);
