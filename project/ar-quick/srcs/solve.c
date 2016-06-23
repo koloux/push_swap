@@ -6,25 +6,11 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/13 18:12:07 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/23 18:14:03 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-static int	solve_order(t_stk *stack)
-{
-	int	i;
-
-	i = stack->stk->top;
-	while (i > 0)
-	{
-		if (stack->stk->nb[i] > stack->stk->nb[i - 1])
-			return (0);
-		i--;
-	}
-	return (1);
-}
 
 static void	solve_secondary(t_stk *stk_a, t_stk *stk_b, int cmd)
 {
@@ -104,7 +90,6 @@ void		solve_stack(t_stk *stk_a, t_stk *stk_b)
 	while (solve_order(stk_a) != 1)
 	{
 		cmd = 0;
-		info(stk_a, stk_b, 8);
 		solve_soft(stk_a, stk_b);
 		pivot = stk_a->stk->nb[stk_a->stk->top / 2];
 		if (stk_a->stk->nb[stk_a->stk->top] > pivot)

@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   order.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/24 09:42:17 by nhuber            #+#    #+#             */
-/*   Updated: 2016/03/03 18:35:56 by nhuber           ###   ########.fr       */
+/*   Created: 2016/06/23 18:01:12 by nhuber            #+#    #+#             */
+/*   Updated: 2016/06/23 18:10:55 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 
-char	*ft_strstr(const char *big, const char *little)
+int	solve_order(t_stk *stack)
 {
-	size_t	i;
-	size_t	j;
+	int	i;
 
-	i = 0;
-	if (*little == '\0')
-		return ((char *)big);
-	while (big[i])
+	i = stack->stk->top;
+	while (i > 0)
 	{
-		j = 0;
-		while (little[j] == big[i + j] && little[j])
-			j++;
-		if (j == ft_strlen(little))
-			return ((char *)&big[i]);
-		i++;
+		if (stack->stk->nb[i] > stack->stk->nb[i - 1])
+			return (0);
+		i--;
 	}
-	return (NULL);
+	return (1);
 }

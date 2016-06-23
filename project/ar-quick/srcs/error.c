@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 18:22:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/01 15:10:53 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/23 17:50:48 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static int	error_not_int(char *av, int nb)
 	return (nblen != strlen ? 1 : 0);
 }
 
-int			error(int ac, char **av)
+int			error_nbr(int ac, char **av)
 {
 	int	i;
 	int	er;
@@ -63,7 +63,35 @@ int			error(int ac, char **av)
 		i++;
 	}
 	er += error_duplicate(nbrs, ac);
-	if (er != 0 || ac < 2)
-		ft_putstr_fd("Error\n", 1);
+	if (er != 0 || ac == 0)
+		ft_putstr_fd("Error\n", STDERR_FILENO);
+	return (er);
+}
+
+int			error_instr(char *instr)
+{
+	int	er;
+
+	er = 0;
+	if (instr == NULL)
+		return (1);
+	if (ft_strlen(instr) == 2 && instr[0] == 's'
+				&& (instr[1] == 'a' || instr[1] == 'b'
+				|| instr[1] == 's'))
+		er++;
+	if (ft_strlen(instr) == 2 && instr[0] == 'p'
+				&& (instr[1] == 'a' || instr[1] == 'b'))
+		er++;
+	if (instr[0] == 'r')
+	{
+		if (ft_strlen(instr) == 2 &&
+				(instr[1] == 'a' || instr[1] == 'b' || instr[1] == 'r'))
+			er++;
+		if (ft_strlen(instr) == 3 && instr[1] == 'r' &&
+				(instr[1] == 'a' || instr[1] == 'b' || instr[1] == 'r'))
+			er++;
+	}
+	if (er == 0)
+		ft_putstr_fd("Error\n", STDERR_FILENO);
 	return (er);
 }

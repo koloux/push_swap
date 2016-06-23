@@ -1,33 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   cmd.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/24 09:42:17 by nhuber            #+#    #+#             */
-/*   Updated: 2016/03/03 18:35:56 by nhuber           ###   ########.fr       */
+/*   Created: 2016/06/07 14:47:27 by nhuber            #+#    #+#             */
+/*   Updated: 2016/06/23 16:56:48 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 
-char	*ft_strstr(const char *big, const char *little)
+void	cmd_add(t_stk *stack, char *cmd)
 {
-	size_t	i;
-	size_t	j;
+	char	*tmp;
+	char	*tmp2;
+
+	if (stack->op == NULL)
+	{
+		if ((tmp = ft_strdup(cmd)) != NULL)
+			stack->op = tmp;
+	}
+	else
+	{
+		tmp = stack->op;
+		if ((tmp2 = ft_strjoin(tmp, cmd)) != NULL)
+			stack->op = tmp2;
+		free(tmp);
+	}
+}
+
+void	cmd_print(t_stk *stack)
+{
+	int	i;
 
 	i = 0;
-	if (*little == '\0')
-		return ((char *)big);
-	while (big[i])
-	{
-		j = 0;
-		while (little[j] == big[i + j] && little[j])
-			j++;
-		if (j == ft_strlen(little))
-			return ((char *)&big[i]);
+	while (stack->op[i])
 		i++;
-	}
-	return (NULL);
+	write(1, &(stack->op), i);
 }

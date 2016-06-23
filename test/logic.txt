@@ -10,4 +10,8 @@ Linked List version :
 - while stack B is not empty
 	push to stack A
 
+Array version (contains the checker programm) :
+- soft solve
+- quick solve
+
 HAVE FUN CODING !

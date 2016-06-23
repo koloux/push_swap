@@ -13,29 +13,42 @@
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
 NAME = push_swap
-HEADER = push_swap.h
-F_DIR = ./
+NAME2 = checker
+H_DIR = header
+F_DIR = srcs
 L_DIR = libft
-FILES = main.c error.c stack.c cmd.c item.c solve.c get.c
-TMP = Makefile~  $(F_DIR)/header.h~ $(NAME)~ $(FILES:.c=.c~)
+FILES = $(F_DIR)/cmd.c \
+		$(F_DIR)/error.c \
+		$(F_DIR)/get.c \
+		$(F_DIR)/item.c \
+		$(F_DIR)/solve.c \
+		$(F_DIR)/stack.c \
+		$(F_DIR)/get_next_line.c \
+		$(F_DIR)/info.c \
+		$(F_DIR)/order.c
+CHECKER = $(FILES) $(F_DIR)/checker.c
+PUSH_SWAP = $(FILES) $(F_DIR)/push_swap.c 
+TMP = Makefile~ $(NAME2)~ $(NAME)~ $(FILES:.c=.c~)
 
 all : $(NAME)
 
 $(NAME) :
 	@cd $(L_DIR) && $(MAKE)
-	@echo Project : $(NAME)
+	@echo Project : $(NAME) and $(NAME2)
 	@echo "\t"- Compiler : $(CC)
 	@echo "\t"- Flags : $(FLAGS)
-	@$(CC) -o $(NAME) $(FLAGS) $(FILES) -I $(L_DIR) -L $(L_DIR) -lft
+	@$(CC) -o $(NAME) $(FLAGS) $(PUSH_SWAP) -I $(H_DIR) -L $(L_DIR) -lft
+	@$(CC) -o $(NAME2) $(FLAGS) $(CHECKER) -I $(H_DIR) -L $(L_DIR) -lft
 
 clean :
-	@echo clean :"\n\tTemporary and binary files deteleted"
+	@echo clean :"\n\tTemporary and binary files deleted"
 	@rm -f $(TMP) $(OBJ)
 	@cd $(L_DIR) && $(MAKE) $@
 
 fclean : clean
-	@echo fclean :"\n\t"$(NAME) deleted
+	@echo fclean :"\n\t"$(NAME) and $(NAME2) deleted
 	@rm -f $(NAME)
+	@rm -f $(NAME2)
 	@cd $(L_DIR) && $(MAKE) $@
 	@rm -f libft.a
 
@@ -44,12 +57,12 @@ test :
 	@echo Project : $(NAME)
 	@echo "\t"- Compiler : $(CC)
 	@echo "\t"- Flags : $(FLAGS)
-	@$(CC) -o $(NAME) $(FLAGS) $(FILES) -I $(L_DIR) -L $(L_DIR) -lft
+	@$(CC) -o $(NAME) $(FLAGS) $(PUSH_SWAP) -I $(H_DIR) -L $(L_DIR) -lft
 	@./$(NAME) 3 7 4 9 5 2 6 1
 
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"
-	@norminette > ../test/checking && cat ../test/checking | grep -B1 "Error"
+	@norminette > ../../test/checking && cat ../../test/checking | grep -B1 "Error"
 
 re : fclean all
 

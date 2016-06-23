@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cmd.c                                              :+:      :+:    :+:   */
+/*   info.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/06/07 14:47:27 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/13 17:45:04 by nhuber           ###   ########.fr       */
+/*   Created: 2016/06/23 17:23:03 by nhuber            #+#    #+#             */
+/*   Updated: 2016/06/23 17:25:11 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include <stdio.h>
 
-void	cmd_add(t_stk *stack, char *cmd)
+void	info(t_stk *stk_a, t_stk *stk_b, int ac)
 {
-	char	*tmp;
-	char	*tmp2;
-
-	if (stack->op == NULL)
-	{
-		if ((tmp = ft_strdup(cmd)) != NULL)
-			stack->op = tmp;
-	}
-	else
-	{
-		tmp = stack->op;
-		if ((tmp2 = ft_strjoin(tmp, cmd)) != NULL)
-			stack->op = tmp2;
-		free(tmp);
-	}
-}
-
-void	cmd_print(t_stk *stack)
-{
-	int	i;
+	int i;
 
 	i = 0;
-	while (stack->op[i])
+	while (i < ac)
+	{
+		if (i <= stk_a->stk->top)
+			printf("A : index [%d] = {%d}\n", i, stk_a->stk->nb[i]);
+		if (stk_b->stk->top >= 0 && i <= stk_b->stk->top)
+			printf("B : index [%d] = {%d}\n", i, stk_b->stk->nb[i]);
 		i++;
-	write(1, &(stack->op), i);
+	}
+	printf("top-a : %d\n", stk_a->stk->top);
+	printf("top-b : %d\n", stk_b->stk->top);
 }
