@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/23 18:14:03 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/24 17:19:15 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,33 @@
 
 static void	solve_secondary(t_stk *stk_a, t_stk *stk_b, int cmd)
 {
-	(void)stk_a;
 	if (cmd == 1 && (stk_b->stk->nb[0] >
 				stk_b->stk->nb[stk_b->stk->top]))
+	{
 		stk_b->rev(stk_b);
+		cmd += 3;
+	}
 	if (cmd == 2 &&
 			(stk_b->stk->nb[stk_b->stk->top - 1] >
 			stk_b->stk->nb[stk_b->stk->top]))
+	{
 		stk_b->swap(stk_b);
+		cmd += 3;
+	}
 	if (cmd == 3 && (stk_b->stk->nb[0] < stk_b->stk->nb[stk_b->stk->top]
 			|| (stk_b->stk->nb[stk_b->stk->top - 1] >
 			stk_b->stk->nb[stk_b->stk->top]
 			&& stk_b->stk->nb[0] < stk_b->stk->nb[stk_b->stk->top - 1])))
+	{
 		stk_b->rot(stk_b);
+		cmd += 3;
+	}
+	cmd_add(stk_a, cmd);
 }
 
 static void	solve_soft(t_stk *stk_a, t_stk *stk_b)
 {
 	int	min;
-	int	cmd;
 
 	min = get_min(stk_a);
 	while (solve_order(stk_a) != 1
@@ -40,20 +48,18 @@ static void	solve_soft(t_stk *stk_a, t_stk *stk_b)
 				min == stk_a->stk->nb[stk_a->stk->top] ||
 				min == stk_a->stk->nb[stk_a->stk->top - 1]))
 	{
-		cmd = 0;
 		if (min == stk_a->stk->nb[stk_a->stk->top])
-			stk_a->push(stk_a, stk_b);
+			stk_a->push(stk_a, stk_b, 1);
 		if (min == stk_a->stk->nb[0])
 		{
-			cmd = 1;
 			stk_a->rev(stk_a);
+			solve_secondary(stk_a, stk_b, 1);
 		}
 		if (min == stk_a->stk->nb[stk_a->stk->top - 1])
 		{
-			cmd = 2;
 			stk_a->swap(stk_a);
+			solve_secondary(stk_a, stk_b, 2);
 		}
-		solve_secondary(stk_a, stk_b, cmd);
 		min = get_min(stk_a);
 	}
 }
@@ -65,7 +71,7 @@ static void	solve_end(t_stk *stk_a, t_stk *stk_b)
 	if (solve_order(stk_b))
 	{
 		while (stk_b->stk->top != -1)
-			stk_a->push(stk_b, stk_a);
+			stk_a->push(stk_b, stk_a, 0);
 	}
 	else
 	{
@@ -73,46 +79,49 @@ static void	solve_end(t_stk *stk_a, t_stk *stk_b)
 		{
 			max = get_max(stk_b);
 			if (max == stk_b->stk->nb[stk_b->stk->top])
-				stk_a->push(stk_b, stk_a);
+				stk_a->push(stk_b, stk_a, 0);
 			else if (max == stk_b->stk->nb[stk_b->stk->top - 1])
+			{
 				stk_b->swap(stk_b);
+				cmd_join(&stk_a->op, "sb\n");
+			}
 			else
+			{
 				stk_b->rot(stk_b);
+				cmd_join(&stk_a->op, "rb\n");
+			}
 		}
 	}
 }
 
 void		solve_stack(t_stk *stk_a, t_stk *stk_b)
 {
-	int	cmd;
 	int	pivot;
 
 	while (solve_order(stk_a) != 1)
 	{
-		cmd = 0;
 		solve_soft(stk_a, stk_b);
 		pivot = stk_a->stk->nb[stk_a->stk->top / 2];
 		if (stk_a->stk->nb[stk_a->stk->top] > pivot)
 		{
 			if (stk_a->stk->nb[0] < pivot)
 			{
-				cmd = 1;
 				stk_a->rev(stk_a);
+				solve_secondary(stk_a, stk_b, 1);
 			}
 			if (stk_a->stk->nb[stk_a->stk->top - 1] < pivot)
 			{
-				cmd = 2;
 				stk_a->swap(stk_a);
+				solve_secondary(stk_a, stk_b, 2);
 			}
 			else
 			{
-				cmd = 3;
 				stk_a->rot(stk_a);
+				solve_secondary(stk_a, stk_b, 3);
 			}
 		}
 		else
-			stk_a->push(stk_a, stk_b);
-		solve_secondary(stk_a, stk_b, cmd);
+			stk_a->push(stk_a, stk_b, 1);
 	}
 	solve_end(stk_a, stk_b);
 }

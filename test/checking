@@ -1,6 +1,150 @@
+Norme: ./libft/ft_putendl_fd.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstdelone.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstiter.o
+Warning: Not a valid file
+Norme: ./libft/ft_strnew.o
+Warning: Not a valid file
+Norme: ./libft/ft_memchr.o
+Warning: Not a valid file
+Norme: ./libft/ft_strmapi.o
+Warning: Not a valid file
+Norme: ./libft/ft_strlen.o
+Warning: Not a valid file
+Norme: ./libft/ft_putstr_fd.o
+Warning: Not a valid file
+Norme: ./libft/ft_memdup.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstnew.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstadd.o
+Warning: Not a valid file
+Norme: ./libft/ft_bitprint.o
+Warning: Not a valid file
+Norme: ./libft/ft_isdigit.o
+Warning: Not a valid file
+Norme: ./libft/ft_sqroot.o
+Warning: Not a valid file
+Norme: ./libft/ft_memccpy.o
+Warning: Not a valid file
+Norme: ./libft/ft_putendl.o
+Warning: Not a valid file
+Norme: ./libft/ft_strlcat.o
+Warning: Not a valid file
+Norme: ./libft/ft_islower.o
+Warning: Not a valid file
+Norme: ./libft/ft_memdel.o
+Warning: Not a valid file
+Norme: ./libft/ft_strclr.o
+Warning: Not a valid file
+Norme: ./libft/ft_strchr.o
+Warning: Not a valid file
+Norme: ./libft/ft_bitgetoctal.o
+Warning: Not a valid file
+Norme: ./libft/ft_memset.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstremoveif.o
+Warning: Not a valid file
+Norme: ./libft/ft_putstr.o
+Warning: Not a valid file
+Norme: ./libft/ft_strsub.o
+Warning: Not a valid file
+Norme: ./libft/ft_itoa.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstput.o
+Warning: Not a valid file
+Norme: ./libft/ft_striter.o
+Warning: Not a valid file
+Norme: ./libft/ft_strequ.o
+Warning: Not a valid file
+Norme: ./libft/ft_memalloc.o
+Warning: Not a valid file
+Norme: ./libft/ft_isascii.o
+Warning: Not a valid file
+Norme: ./libft/ft_putnbr_fd.o
+Warning: Not a valid file
+Norme: ./libft/ft_strjoin.o
+Warning: Not a valid file
+Norme: ./libft/ft_strtrim.o
+Warning: Not a valid file
+Norme: ./libft/ft_putchar_fd.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstdel.o
+Warning: Not a valid file
+Norme: ./libft/ft_memcpy.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstaddback.o
+Warning: Not a valid file
+Norme: ./libft/ft_strcat.o
+Warning: Not a valid file
+Norme: ./libft/ft_atoi.o
+Warning: Not a valid file
+Norme: ./libft/ft_lstmap.o
+Warning: Not a valid file
+Norme: ./libft/ft_bitgetfour.o
+Warning: Not a valid file
 Norme: ./libft/auteur
 Warning: Not a valid file
+Norme: ./libft/ft_strdup.o
+Warning: Not a valid file
+Norme: ./libft/ft_memmove.o
+Warning: Not a valid file
+Norme: ./libft/ft_strdel.o
+Warning: Not a valid file
+Norme: ./libft/ft_isupper.o
+Warning: Not a valid file
+Norme: ./libft/ft_strcpy.o
+Warning: Not a valid file
+Norme: ./libft/ft_strcmp.o
+Warning: Not a valid file
+Norme: ./libft/ft_tolower.o
+Warning: Not a valid file
+Norme: ./libft/ft_bzero.o
+Warning: Not a valid file
+Norme: ./libft/ft_strncpy.o
+Warning: Not a valid file
+Norme: ./libft/ft_strmap.o
+Warning: Not a valid file
+Norme: ./libft/ft_isprint.o
+Warning: Not a valid file
+Norme: ./libft/ft_striteri.o
+Warning: Not a valid file
+Norme: ./libft/ft_strnequ.o
+Warning: Not a valid file
 Norme: ./libft/Makefile
+Warning: Not a valid file
+Norme: ./libft/ft_strstr.o
+Warning: Not a valid file
+Norme: ./libft/ft_bitsetfour.o
+Warning: Not a valid file
+Norme: ./libft/ft_putnbr.o
+Warning: Not a valid file
+Norme: ./libft/ft_strncat.o
+Warning: Not a valid file
+Norme: ./libft/ft_memcmp.o
+Warning: Not a valid file
+Norme: ./libft/ft_strncmp.o
+Warning: Not a valid file
+Norme: ./libft/ft_isalpha.o
+Warning: Not a valid file
+Norme: ./libft/ft_isalnum.o
+Warning: Not a valid file
+Norme: ./libft/libft.a
+Warning: Not a valid file
+Norme: ./libft/ft_strnstr.o
+Warning: Not a valid file
+Norme: ./libft/ft_strsplit.o
+Warning: Not a valid file
+Norme: ./libft/ft_strrchr.o
+Warning: Not a valid file
+Norme: ./libft/ft_putchar.o
+Warning: Not a valid file
+Norme: ./libft/ft_toupper.o
+Warning: Not a valid file
+Norme: ./push_swap
+Warning: Not a valid file
+Norme: ./checker
 Warning: Not a valid file
 Norme: ./auteur
 Warning: Not a valid file
@@ -10,31 +154,31 @@ Norme: ./libft/ft_toupper.c
 Norme: ./libft/ft_lstput.c
 Norme: ./libft/ft_striteri.c
 Norme: ./libft/ft_strcpy.c
-Norme: ./libft/ft_strstr.c
-Norme: ./libft/ft_putstr_fd.c
 Norme: ./libft/ft_strncat.c
 Norme: ./libft/ft_lstadd.c
+Norme: ./libft/ft_putstr_fd.c
+Norme: ./libft/ft_strstr.c
 Norme: ./libft/ft_lstiter.c
 Norme: ./libft/ft_isdigit.c
 Norme: ./libft/ft_isupper.c
 Norme: ./libft/ft_strchr.c
-Norme: ./libft/ft_putnbr.c
-Norme: ./libft/ft_lstdelone.c
 Norme: ./libft/ft_strncmp.c
+Norme: ./libft/ft_lstdelone.c
+Norme: ./libft/ft_putnbr.c
 Norme: ./libft/ft_isalpha.c
 Norme: ./libft/ft_strdel.c
 Norme: ./libft/ft_lstremoveif.c
-Norme: ./libft/ft_strtrim.c
-Norme: ./libft/ft_isalnum.c
 Norme: ./libft/ft_strnew.c
-Norme: ./libft/ft_sqroot.c
 Norme: ./libft/ft_lstmap.c
-Norme: ./libft/ft_putnbr_fd.c
+Norme: ./libft/ft_isalnum.c
+Norme: ./libft/ft_strtrim.c
+Norme: ./libft/ft_sqroot.c
 Norme: ./libft/ft_strequ.c
-Norme: ./libft/ft_putstr.c
+Norme: ./libft/ft_putnbr_fd.c
 Norme: ./libft/ft_strsplit.c
-Norme: ./libft/ft_memmove.c
+Norme: ./libft/ft_putstr.c
 Norme: ./libft/ft_strnstr.c
+Norme: ./libft/ft_memmove.c
 Norme: ./libft/ft_strsub.c
 Norme: ./libft/ft_putchar.c
 Norme: ./libft/ft_strrchr.c
@@ -45,14 +189,14 @@ Norme: ./libft/ft_memccpy.c
 Norme: ./libft/ft_strmapi.c
 Norme: ./libft/ft_strlen.c
 Norme: ./libft/ft_lstdel.c
-Norme: ./libft/ft_memdup.c
 Norme: ./libft/ft_strjoin.c
+Norme: ./libft/ft_memdup.c
 Norme: ./libft/ft_memchr.c
-Norme: ./libft/ft_strmap.c
 Norme: ./libft/ft_itoa.c
+Norme: ./libft/ft_strmap.c
 Norme: ./libft/ft_strclr.c
-Norme: ./libft/ft_striter.c
 Norme: ./libft/ft_bitsetfour.c
+Norme: ./libft/ft_striter.c
 Norme: ./libft/ft_bitgetoctal.c
 Norme: ./libft/ft_memcpy.c
 Norme: ./libft/ft_strncpy.c
@@ -68,31 +212,34 @@ Norme: ./libft/ft_strcat.c
 Norme: ./libft/ft_memset.c
 Norme: ./libft/ft_strnequ.c
 Norme: ./libft/ft_strcmp.c
-Norme: ./libft/ft_bzero.c
-Norme: ./libft/ft_memcmp.c
 Norme: ./libft/ft_isprint.c
+Norme: ./libft/ft_memcmp.c
+Norme: ./libft/ft_bzero.c
 Norme: ./libft/ft_putendl_fd.c
 Norme: ./libft/ft_memdel.c
 Norme: ./libft/ft_lstaddback.c
 Norme: ./libft/ft_strdup.c
 Norme: ./libft/ft_bitprint.c
 Norme: ./libft/ft_tolower.c
-Norme: ./libft/ft_strlcat.c
 Norme: ./libft/ft_bitgetfour.c
-Norme: ./libft/ft_putendl.c
+Norme: ./libft/ft_strlcat.c
 Norme: ./libft/ft_islower.c
+Norme: ./libft/ft_putendl.c
 Norme: ./srcs/order.c
 Norme: ./srcs/push_swap.c
 Norme: ./libft/libft.h
 Norme: ./srcs/cmd.c
 Norme: ./srcs/item.c
-Norme: ./srcs/get.c
-Norme: ./srcs/stack.c
-Norme: ./srcs/info.c
 Norme: ./srcs/error.c
+Norme: ./srcs/get.c
+Norme: ./srcs/info.c
+Norme: ./srcs/stack.c
 Norme: ./header/get_next_line.h
-Norme: ./header/push_swap.h
 Norme: ./srcs/get_next_line.c
+Norme: ./header/push_swap.h
 Norme: ./srcs/checker.c
 Norme: ./srcs/solve.c
-Error (line 85): function solve_stack has 31 lines
+Error (line 64): function solve_end has 26 lines
+Error (line 83): C++ comment
+Error (line 88): C++ comment
+Error (line 94): function solve_stack has 28 lines

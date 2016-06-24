@@ -52,13 +52,8 @@ fclean : clean
 	@cd $(L_DIR) && $(MAKE) $@
 	@rm -f libft.a
 
-test :
-	@cd $(L_DIR) && $(MAKE)
-	@echo Project : $(NAME)
-	@echo "\t"- Compiler : $(CC)
-	@echo "\t"- Flags : $(FLAGS)
-	@$(CC) -o $(NAME) $(FLAGS) $(PUSH_SWAP) -I $(H_DIR) -L $(L_DIR) -lft
-	@./$(NAME) 3 7 4 9 5 2 6 1
+test : re
+	@./$(NAME) 3 7 4 9 5 2 6 1 | ./$(NAME2) 3 7 4 9 5 2 6 1
 
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"

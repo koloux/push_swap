@@ -6,28 +6,33 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 14:47:27 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/23 16:56:48 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/24 16:05:37 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	cmd_add(t_stk *stack, char *cmd)
+void	cmd_add(t_stk *stack, int cmd)
+{	
+	if (cmd % 3 == 1)
+		cmd == 1 ? cmd_join(&stack->op, "rra\n") : cmd_join(&stack->op, "rrr\n");
+	if (cmd % 3 == 2)
+		cmd == 2 ? cmd_join(&stack->op, "sa\n") : cmd_join(&stack->op, "ss\n");
+	if (cmd % 3 == 0)
+		cmd == 3 ? cmd_join(&stack->op, "ra\n") : cmd_join(&stack->op, "rr\n");
+}
+
+void	cmd_join(char **op, char *cmd)
 {
 	char	*tmp;
-	char	*tmp2;
 
-	if (stack->op == NULL)
-	{
-		if ((tmp = ft_strdup(cmd)) != NULL)
-			stack->op = tmp;
-	}
+	if (*op == NULL)
+		*op = ft_strdup(cmd);
 	else
 	{
-		tmp = stack->op;
-		if ((tmp2 = ft_strjoin(tmp, cmd)) != NULL)
-			stack->op = tmp2;
-		free(tmp);
+		tmp = *op;
+		*op = ft_strjoin(tmp, cmd);
+		ft_memdel((void *)&tmp);
 	}
 }
 
@@ -38,5 +43,5 @@ void	cmd_print(t_stk *stack)
 	i = 0;
 	while (stack->op[i])
 		i++;
-	write(1, &(stack->op), i);
+	write(1, stack->op, i);
 }

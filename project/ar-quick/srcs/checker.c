@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 09:11:19 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/23 17:58:29 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/24 16:02:15 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	do_instrr(char *instr, t_stk *sa, t_stk *sb)
 static void	do_instr(char *instr, t_stk *sa, t_stk *sb)
 {
 	if (instr[0] == 'p')
-		instr[1] == 'b' ? sa->push(sa, sb) : sa->push(sb, sa);
+		instr[1] == 'b' ? sa->push(sa, sb, -1) : sa->push(sb, sa, -1);
 	if (instr[0] == 's')
 	{
 		if (instr[1] == 's')
@@ -78,6 +78,5 @@ int			main(int ac, char **av)
 		}
 		(solve_order(stk_a) == 1 ? write(1, "OK\n", 3) : write(1, "KO\n", 3));
 	}
-	info(stk_a, stk_b, ac);
 	return (0);
 }

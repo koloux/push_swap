@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 10:14:57 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/13 17:47:09 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/24 16:04:32 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	stack_swap(void *stack)
 	}
 }
 
-static void	stack_push(void *stack_a, void *stack_b)
+static void	stack_push(void *stack_a, void *stack_b, int sens)
 {
 	t_stk	*sa;
 	t_stk	*sb;
@@ -35,6 +35,8 @@ static void	stack_push(void *stack_a, void *stack_b)
 	sb = (t_stk *)stack_b;
 	if (sa->stk->top != -1)
 		sb->stk->nb[sb->stk->top++ + 1] = sa->stk->nb[sa->stk->top--];
+	if (sens >= 0)
+		(sens == 1) ? cmd_join(&sa->op, "pb\n") : cmd_join(&sb->op, "pa\n");
 }
 
 static void	stack_rotate(void *stack)

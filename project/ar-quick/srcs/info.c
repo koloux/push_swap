@@ -6,12 +6,11 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 17:23:03 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/23 17:25:11 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/24 15:35:20 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 void	info(t_stk *stk_a, t_stk *stk_b, int ac)
 {
