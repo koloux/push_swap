@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/24 15:31:57 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/25 16:53:50 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ t_stk			*stack_construct(char **param, int top);
 t_item			*item_construct(char **param, int top);
 void			solve_stack(t_stk *stk_a, t_stk *stk_b);
 int				solve_order(t_stk *stack);
+void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b);
 int				get_min(t_stk *stack);
 int				get_max(t_stk *stack);
 void			cmd_add(t_stk *stack, int cmd);
@@ -45,6 +46,6 @@ void			cmd_print(t_stk *stack);
 int				error_nbr(int ac, char **av);
 int				error_instr(char *instr);
 
-# include <stdio.h>
 void			info(t_stk *stk_a, t_stk *stk_b, int ac);
+
 #endif

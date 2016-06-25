@@ -24,8 +24,8 @@ FILES = $(F_DIR)/cmd.c \
 		$(F_DIR)/solve.c \
 		$(F_DIR)/stack.c \
 		$(F_DIR)/get_next_line.c \
-		$(F_DIR)/info.c \
-		$(F_DIR)/order.c
+		$(F_DIR)/order.c \
+		$(F_DIR)/info.c
 CHECKER = $(FILES) $(F_DIR)/checker.c
 PUSH_SWAP = $(FILES) $(F_DIR)/push_swap.c 
 TMP = Makefile~ $(NAME2)~ $(NAME)~ $(FILES:.c=.c~)
@@ -53,7 +53,14 @@ fclean : clean
 	@rm -f libft.a
 
 test : re
+	@echo testing with : 3 7 4 9 5 2 6 1
 	@./$(NAME) 3 7 4 9 5 2 6 1 | ./$(NAME2) 3 7 4 9 5 2 6 1
+	@echo testing with : 3 2 1 0
+	@./$(NAME) 3 2 1 0 | ./$(NAME2) 3 2 1 0
+	@echo testing with : 2 1 3 6 5 8
+	@./$(NAME) 2 1 3 6 5 8 | ./$(NAME2) 2 1 3 6 5 8
+	@echo testing with : 4 67 3 87 23
+	@./$(NAME) 4 67 3 87 23 | ./$(NAME2) 4 67 3 87 23
 
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"
