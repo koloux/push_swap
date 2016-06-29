@@ -62,6 +62,10 @@ test : re
 	@./$(NAME) 2 1 3 6 5 8 | ./$(NAME2) 2 1 3 6 5 8
 	@echo testing with : 4 67 3 87 23
 	@./$(NAME) 4 67 3 87 23 | ./$(NAME2) 4 67 3 87 23
+	@echo testing with : 0 1 2 3 4
+	@./$(NAME) 0 1 2 3 4 | ./$(NAME2) 0 1 2 3 4
+	@echo testing with : -1 0 1 2 3
+	@./$(NAME) -1 0 1 2 3 | ./$(NAME2) -1 0 1 2 3
 
 error : re
 	@echo testing with : 1

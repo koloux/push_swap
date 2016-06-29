@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 18:01:12 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/29 15:24:24 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 17:59:00 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static int		order_reverse(t_stk *stack)
 
 void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b)
 {
-	if (order_reverse(stk_a) == 1)
+	if (order_reverse(stk_a) == 1 && solve_order(stk_a) != 1)
 	{
 		if (stk_a->stk->top == 1)
 		{
