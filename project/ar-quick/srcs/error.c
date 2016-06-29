@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 18:22:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/23 17:50:48 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 14:28:42 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	error_duplicate(int *nbrs, int ac)
 	while (i < ac)
 	{
 		j = i + 1;
-		while (nbrs[i] != nbrs[j] && j < ac)
+		while (j < ac && nbrs[i] != nbrs[j])
 			j++;
 		if (j != ac)
 			return (1);
@@ -47,6 +47,22 @@ static int	error_not_int(char *av, int nb)
 	return (nblen != strlen ? 1 : 0);
 }
 
+static int	error_digit(char *nbr)
+{
+	int	er;
+	int	i;
+
+	i = (nbr[0] == '-' ? 1 : 0);
+	er = 0;
+	while (nbr[i])
+	{
+		if (!ft_isdigit(nbr[i]))
+			er++;
+		i++;
+	}
+	return (er);
+}
+
 int			error_nbr(int ac, char **av)
 {
 	int	i;
@@ -58,13 +74,16 @@ int			error_nbr(int ac, char **av)
 	while (av[i])
 	{
 		nbrs[i] = ft_atoi(av[i]);
-		if (error_not_int(av[i], nbrs[i]))
+		if (error_not_int(av[i], nbrs[i]) || error_digit(av[i]))
 			er++;
 		i++;
 	}
 	er += error_duplicate(nbrs, ac);
 	if (er != 0 || ac == 0)
+	{
 		ft_putstr_fd("Error\n", STDERR_FILENO);
+		er++;
+	}
 	return (er);
 }
 

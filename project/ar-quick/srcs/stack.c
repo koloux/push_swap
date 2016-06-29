@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 10:14:57 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/25 10:11:39 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 14:11:35 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,16 +66,19 @@ static void	stack_reverse(void *stack)
 	int		tmp;
 
 	this = (t_stk *)stack;
-	if (this->stk->top > 0)
+	if (this->stk->nb != NULL)
 	{
-		i = 0;
-		tmp = this->stk->nb[0];
-		while (i <= this->stk->top)
+		if (this->stk->top > 0)
 		{
-			this->stk->nb[i] = this->stk->nb[i + 1];
-			i++;
+			i = 0;
+			tmp = this->stk->nb[0];
+			while (i <= this->stk->top)
+			{
+				this->stk->nb[i] = this->stk->nb[i + 1];
+				i++;
+			}
+			this->stk->nb[this->stk->top] = tmp;
 		}
-		this->stk->nb[this->stk->top] = tmp;
 	}
 }
 

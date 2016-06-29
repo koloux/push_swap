@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 18:01:12 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/25 16:03:43 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 15:24:24 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,24 @@ void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b)
 {
 	if (order_reverse(stk_a) == 1)
 	{
-		while (stk_a->stk->top > 2)
+		if (stk_a->stk->top == 1)
 		{
-			stk_a->rev(stk_a);
-			cmd_join(&stk_a->op, "rra\n");
-			stk_a->push(stk_a, stk_b, 1);
+			stk_a->swap(stk_a);
+			cmd_join(&stk_a->op, "sa\n");
 		}
-		stk_a->swap(stk_a);
-		stk_a->rev(stk_a);
-		cmd_join(&stk_a->op, "sa\nrra\n");
-		while (stk_b->stk->top != -1)
-			stk_a->push(stk_b, stk_a, 0);
+		else
+		{
+			while (stk_a->stk->top > 2)
+			{
+				stk_a->rev(stk_a);
+				cmd_join(&stk_a->op, "rra\n");
+				stk_a->push(stk_a, stk_b, 1);
+			}
+			stk_a->swap(stk_a);
+			stk_a->rev(stk_a);
+			cmd_join(&stk_a->op, "sa\nrra\n");
+			while (stk_b->stk->top != -1)
+				stk_a->push(stk_b, stk_a, 0);
+		}
 	}
 }

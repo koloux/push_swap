@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/25 16:53:50 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 11:03:25 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void			cmd_join(char **op, char *cmd);
 void			cmd_print(t_stk *stack);
 int				error_nbr(int ac, char **av);
 int				error_instr(char *instr);
-
+void			clean_stack(t_stk **stack);
 void			info(t_stk *stk_a, t_stk *stk_b, int ac);
 
 #endif

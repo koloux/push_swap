@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 14:53:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/13 17:47:22 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 14:02:25 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,12 @@ static int	*item_nb(char **param, int top)
 		if (param != NULL)
 		{
 			while (param[i])
-				nb[--top] = ft_atoi(param[i++]);
+				nb[top--] = ft_atoi(param[i++]);
+		}
+		else
+		{
+			while (i < top - 1)
+				nb[i++] = 0;
 		}
 	}
 	return (nb);

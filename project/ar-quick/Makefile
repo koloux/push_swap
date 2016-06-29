@@ -25,7 +25,8 @@ FILES = $(F_DIR)/cmd.c \
 		$(F_DIR)/stack.c \
 		$(F_DIR)/get_next_line.c \
 		$(F_DIR)/order.c \
-		$(F_DIR)/info.c
+		$(F_DIR)/info.c \
+		$(F_DIR)/clean.c
 CHECKER = $(FILES) $(F_DIR)/checker.c
 PUSH_SWAP = $(FILES) $(F_DIR)/push_swap.c 
 TMP = Makefile~ $(NAME2)~ $(NAME)~ $(FILES:.c=.c~)
@@ -62,9 +63,18 @@ test : re
 	@echo testing with : 4 67 3 87 23
 	@./$(NAME) 4 67 3 87 23 | ./$(NAME2) 4 67 3 87 23
 
+error : re
+	@echo testing with : 1
+	@./$(NAME) 1 | ./$(NAME2) 1
+	@echo testing with : a
+	@./$(NAME) a | ./$(NAME2) a
+	@echo testing with : 21474836499
+	@./$(NAME) 21474836499 | ./$(NAME2) 21474836499
+
 norme :
 	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"
-	@norminette > ../../test/checking && cat ../../test/checking | grep -B1 "Error"
+	@norminette > checking
+	@cat checking | grep -B1 "Error"
 
 re : fclean all
 

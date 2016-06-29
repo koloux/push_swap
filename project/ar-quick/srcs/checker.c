@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 09:11:19 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/25 10:25:56 by nhuber           ###   ########.fr       */
+/*   Updated: 2016/06/29 14:28:04 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ int			main(int ac, char **av)
 				do_instr(buff, stk_a, stk_b);
 		}
 		(solve_order(stk_a) == 1 ? write(1, "OK\n", 3) : write(1, "KO\n", 3));
+		clean_stack(&stk_a);
+		clean_stack(&stk_b);
 	}
 	return (0);
 }
