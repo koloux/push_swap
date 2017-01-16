@@ -76,9 +76,9 @@ error : re
 	@./$(NAME) 21474836499 | ./$(NAME2) 21474836499
 
 norme :
-	@echo "\t\tNORME ERROR\n\tif no error nothing will appear\n----------------------------------------------"
+	@echo "\t\tNORME ERROR\n----------------------------------------------"
 	@norminette > checking
-	@cat checking | grep -B1 "Error"
+	@cat checking
 
 re : fclean all
 

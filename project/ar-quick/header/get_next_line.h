@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/16 11:06:10 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/23 16:09:59 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/16 15:38:24 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include "../libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
-# define BUFF_SIZE 32
+# define BUFF_SIZE 4
 
 typedef struct		s_llst
 {

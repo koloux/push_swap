@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 09:11:19 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/16 13:15:47 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/16 15:59:00 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int			main(int ac, char **av)
 	buff = NULL;
 	ac--;
 	av++;
-	if (error_nbr(ac, av) != 0)
+	if (ac == 0 || error_nbr(ac, av) != 0)
 		return (0);
 	else
 	{

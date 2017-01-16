@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/16 14:05:08 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/16 20:10:10 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ static void	solve_pivot(t_stk *stk_a, t_stk *stk_b)
 			stk_a->rev(stk_a);
 			solve_secondary(stk_a, stk_b, 1);
 		}
-		if (stk_a->stk->nb[stk_a->stk->top - 1] <
+		else if (stk_a->stk->nb[stk_a->stk->top - 1] <
 				stk_a->stk->nb[stk_a->stk->top / 2])
 		{
 			stk_a->swap(stk_a);
@@ -113,20 +113,18 @@ static void	solve_pivot(t_stk *stk_a, t_stk *stk_b)
 		}
 	}
 	else
-		(solve_order(stk_a) == 1) ? : stk_a->push(stk_a, stk_b, 1);
+		((solve_order(stk_a) == 1 ) ?  solve_order(stk_b) :
+		 stk_a->push(stk_a, stk_b, 1));
 }
 
 void		solve_stack(t_stk *stk_a, t_stk *stk_b)
 {
 	solve_order_reverse(stk_a, stk_b);
-	info(stk_a, stk_b, 6);
 	while (solve_order(stk_a) != 1)
 	{
 		solve_soft(stk_a, stk_b);
-		info(stk_a, stk_b, 6);
-		solve_pivot(stk_a, stk_b);
-		info(stk_a, stk_b, 6);
+		solve_pivot(stk_a, stk_b);	
 	}
 	solve_end(stk_a, stk_b);
-	info(stk_a, stk_b, 6);
+//	info(stk_a, stk_b, 3);
 }

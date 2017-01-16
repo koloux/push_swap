@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/29 11:03:25 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/16 19:42:53 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ typedef struct	s_stk
 	char		*op;
 	t_item		*stk;
 }				t_stk;
-
+void info(t_stk *stk_a, t_stk *stk_b, int ac);
 t_stk			*stack_construct(char **param, int top);
 t_item			*item_construct(char **param, int top);
 void			solve_stack(t_stk *stk_a, t_stk *stk_b);
@@ -46,6 +46,5 @@ void			cmd_print(t_stk *stack);
 int				error_nbr(int ac, char **av);
 int				error_instr(char *instr);
 void			clean_stack(t_stk **stack);
-void			info(t_stk *stk_a, t_stk *stk_b, int ac);
 
 #endif

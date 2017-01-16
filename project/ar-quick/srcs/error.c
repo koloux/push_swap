@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 18:22:07 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/16 13:15:46 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/16 15:58:58 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int			error_nbr(int ac, char **av)
 		i++;
 	}
 	er += error_duplicate(nbrs, ac);
-	if (er != 0 || ac == 0)
+	if (er != 0)
 	{
 		ft_putstr_fd("Error\n", STDERR_FILENO);
 		er++;
