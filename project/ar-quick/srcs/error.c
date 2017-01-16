@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 18:22:07 by nhuber            #+#    #+#             */
-/*   Updated: 2016/06/29 14:28:42 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/16 13:15:46 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ int			error_instr(char *instr)
 				(instr[1] == 'a' || instr[1] == 'b' || instr[1] == 'r'))
 			er++;
 	}
-	if (er == 0)
+	if (er == 0 && instr[0] != '\0')
 		ft_putstr_fd("Error\n", STDERR_FILENO);
 	return (er);
 }
