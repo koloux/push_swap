@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 18:01:12 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/16 19:42:37 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/19 12:46:19 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int				solve_order(t_stk *stack)
 	return (1);
 }
 
-static int		order_reverse(t_stk *stack)
+int		order_reverse(t_stk *stack)
 {
 	int	i;
 

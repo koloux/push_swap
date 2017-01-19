@@ -54,6 +54,8 @@ fclean : clean
 	@rm -f libft.a
 
 test : re
+	@echo ARG testing : $(ARGS)
+	./$(NAME) $(ARGS)
 	@echo testing with : 3 7 4 9 5 2 6 1
 	@./$(NAME) 3 7 4 9 5 2 6 1 | ./$(NAME2) 3 7 4 9 5 2 6 1
 	@echo testing with : 3 2 1 0
