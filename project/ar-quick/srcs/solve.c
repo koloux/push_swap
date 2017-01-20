@@ -5,109 +5,79 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/17 15:55:56 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/19 19:41:49 by nhuber           ###   ########.fr       */
+/*   Created: 2017/01/20 15:14:29 by nhuber            #+#    #+#             */
+/*   Updated: 2017/01/20 19:04:05 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include <stdio.h>
 
-static void	solve_secondary(t_stk *stk_a, t_stk *stk_b, int cmd)
-{
-	(void)stk_a;
-	(void)stk_b;
-	/*
-	if (cmd == 1 && (stk_b->stk->nb[0] >
-				stk_b->stk->nb[stk_b->stk->top]))
-	{
-		stk_b->rev(stk_b);
-		cmd += 3;
-	}
-	if (cmd == 2 &&
-			(stk_b->stk->nb[stk_b->stk->top - 1] >
-			 stk_b->stk->nb[stk_b->stk->top]))
-	{
-		stk_b->swap(stk_b);
-		cmd += 3;
-	}
-	if (cmd == 3 && (stk_b->stk->nb[0] < stk_b->stk->nb[stk_b->stk->top]
-				|| (stk_b->stk->nb[stk_b->stk->top - 1] >
-					stk_b->stk->nb[stk_b->stk->top]
-					&& stk_b->stk->nb[0] < stk_b->stk->nb[stk_b->stk->top - 1])))
-	{
-		stk_b->rot(stk_b);
-		cmd += 3;
-	}*/
-	cmd_add(stk_a, cmd);
-}
-
-static void	solve_pivot(t_stk *stk_a, t_stk *stk_b)
+int	solve_left(t_stk *stk_a, t_stk *stk_b, int nb)
 {
 	int med;
 	int i;
 
 	i = 0;
+	//add swap
+	if (nb <= 2)
+		return (1);
 	med = get_median(stk_a);
-	while (solve_order(stk_a) != 1 && i < 1) 
+	while (i < nb) 
 	{
-		if (stk_a->stk->nb[stk_a->stk->top] < med)
+		if (stk_a->stk->nb[stk_a->stk->top] <= med)
 		{
-			if ((stk_a->stk->nb[stk_a->stk->top - 1] <
-						stk_a->stk->nb[0]) && (stk_a->stk->nb[stk_a->stk->top - 1]
-							< stk_a->stk->nb[stk_a->stk->top] ))
-			{
-				stk_a->swap(stk_a);
-				((stk_b->stk->top > 0) ? solve_secondary(stk_a, stk_b, 2) :
-				 cmd_add(stk_a, 2));
-			}
-			//redo this one
-			else if ((stk_a->stk->nb[0] <
-						stk_a->stk->nb[stk_a->stk->top]) &&
-					(stk_a->stk->nb[0] <
-					 stk_a->stk->nb[stk_a->stk->top - 1]))
-			{
-				stk_a->rev(stk_a);
-				((stk_b->stk->top > 0) ? solve_secondary(stk_a, stk_b, 1) :
-				 cmd_add(stk_a, 1));
-			}
-			else
-				stk_a->push(stk_a, stk_b, 1);
+			stk_a->rot(stk_a);
+			cmd_add(stk_a, 3);
 		}
-		else if (stk_a->stk->nb[stk_a->stk->top] > med)
-
-		{
-			stk_a->rev(stk_a);
-			((stk_b->stk->top > 0) ? solve_secondary(stk_a, stk_b, 1) :
-			 cmd_add(stk_a, 1));
-		}
-		else
-		{
-			stk_a->push(stk_a, stk_b, 1);
-			printf("|%d|\n", med);
-			info(stk_a, stk_b, 100);
-			//med = get_median(stk_a);
-		}
-		//info(stk_a, stk_b, 100);
+		if (stk_a->stk->nb[stk_a->stk->top] > med)
+			stk_a->push(stk_a, stk_b, 0);
 		i++;
 	}
+	solve_left(stk_a, stk_b, (nb / 2 + nb % 2));
+	solve_right(stk_a, stk_b, nb / 2);
+	return (0);
+}
 
+int	solve_right(t_stk *stk_a, t_stk *stk_b, int nb)
+{
+	int med;
+	int i;
+
+	i = 0;
+	if (nb <= 2)
+		return (1);
+	med = get_median(stk_b);
+	while (i < nb) 
+	{
+		if (stk_b->stk->nb[stk_b->stk->top] >= med)
+		{
+			stk_b->rot(stk_b);
+			cmd_join(&stk_a->op, "rb\n");
+		}
+		if (stk_b->stk->nb[stk_b->stk->top] < med)
+			stk_b->push(stk_b, stk_a, 1);
+		i++;
+	}
+	solve_left(stk_a, stk_b, (nb / 2 + nb % 2));
+	solve_right(stk_a, stk_b, nb / 2);
+	return (0);
 }
 
 void	solve_stack(t_stk *stk_a, t_stk *stk_b)
 {
-	
 	solve_order_reverse(stk_a, stk_b);
-	solve_pivot(stk_a, stk_b);	
+	solve_left(stk_a, stk_b, stk_a->stk->top + 1);
+	info(stk_a, stk_b, 100);
 	/*
-	   if (order_reverse(stk_b) == 1)
-	   {
-	   while (stk_b->stk->top > -1)
-	   stk_b->push(stk_b, stk_a, 0);
-	   }
-	   else
-	   {
-	   274
-	   }
-	   */
+	if (order_reverse(stk_b) == 1)
+	{
+		while (stk_b->stk->top > -1)
+			stk_b->push(stk_b, stk_a, 0);
+	}
+	else
+	{
+		274
+	}
+	*/
 }

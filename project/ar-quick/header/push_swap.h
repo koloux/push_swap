@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/19 11:49:44 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/20 17:12:11 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ t_item			*item_construct(char **param, int top);
 void			solve_stack(t_stk *stk_a, t_stk *stk_b);
 int				solve_order(t_stk *stack);
 void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b);
+int				solve_right(t_stk *stk_a, t_stk *stk_b, int nb);
+int				solve_left(t_stk *stk_a, t_stk *stk_b, int nb);
 int				get_min(t_stk *stack);
 int				get_max(t_stk *stack);
 int				get_median(t_stk *stack);
