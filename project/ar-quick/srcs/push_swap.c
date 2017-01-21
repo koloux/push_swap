@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 15:49:26 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/20 18:37:53 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/21 19:16:32 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		main(int ac, char **av)
 		if (stk_a->stk->top > 0 && solve_order(stk_a) != 1)
 		{
 			solve_stack(stk_a, stk_b);
-			cmd_print(stk_a);
+			//cmd_print(stk_a);
 		}
 		clean_stack(&stk_a);
 		clean_stack(&stk_b);

@@ -1,0 +1,2728 @@
+LEFT = |MED=50|NB=100|TOP=99|
+PUSH B: 8
+PUSH B: 5
+PUSH B: 41
+PUSH B: 37
+PUSH B: 47
+PUSH B: 17
+PUSH B: 15
+PUSH B: 32
+PUSH B: 10
+PUSH B: 36
+PUSH B: 4
+PUSH B: 33
+PUSH B: 30
+PUSH B: 34
+PUSH B: 21
+PUSH B: 29
+PUSH B: 39
+PUSH B: 25
+PUSH B: 27
+PUSH B: 24
+PUSH B: 0
+PUSH B: 28
+PUSH B: 42
+PUSH B: 22
+PUSH B: 38
+PUSH B: 23
+PUSH B: 44
+PUSH B: 3
+PUSH B: 40
+PUSH B: 7
+PUSH B: 45
+PUSH B: 46
+PUSH B: 48
+PUSH B: 19
+PUSH B: 18
+PUSH B: 13
+PUSH B: 1
+PUSH B: 2
+PUSH B: 43
+PUSH B: 20
+PUSH B: 14
+PUSH B: 16
+PUSH B: 35
+PUSH B: 26
+PUSH B: 31
+PUSH B: 12
+PUSH B: 11
+PUSH B: 9
+PUSH B: 6
+PUSH B: 49
+LEFT = |MED=75|NB=50|TOP=49|
+PUSH B: 52
+PUSH B: 66
+PUSH B: 68
+PUSH B: 51
+PUSH B: 74
+PUSH B: 67
+PUSH B: 72
+PUSH B: 55
+PUSH B: 71
+PUSH B: 61
+PUSH B: 62
+PUSH B: 56
+PUSH B: 69
+PUSH B: 50
+PUSH B: 64
+PUSH B: 70
+PUSH B: 73
+PUSH B: 60
+PUSH B: 59
+PUSH B: 63
+PUSH B: 54
+PUSH B: 58
+PUSH B: 53
+PUSH B: 57
+PUSH B: 65
+LEFT = |MED=87|NB=25|TOP=24|
+PUSH B: 83
+PUSH B: 76
+PUSH B: 77
+PUSH B: 85
+PUSH B: 78
+PUSH B: 86
+PUSH B: 84
+PUSH B: 79
+PUSH B: 75
+PUSH B: 80
+PUSH B: 82
+PUSH B: 81
+LEFT = |MED=93|NB=13|TOP=12|
+PUSH B: 87
+PUSH B: 90
+PUSH B: 88
+PUSH B: 89
+PUSH B: 92
+PUSH B: 91
+LEFT = |MED=96|NB=7|TOP=6|
+PUSH B: 94
+PUSH B: 95
+PUSH B: 93
+LEFT = |MED=98|NB=4|TOP=3|
+PUSH B: 96
+PUSH B: 97
+LEFT = |MED=99|NB=2|TOP=1|
+A : index [0] = {99}
+A : index [1] = {98}
+B : index [0] = {8}
+B : index [1] = {5}
+top-a : 1
+top-b : 97
+RIGHT = |MED=49|NB=3|TOP=97|
+PUSH A: 97
+PUSH A: 96
+PUSH A: 93
+LEFT = |MED=97|NB=2|TOP=4|
+A : index [0] = {99}
+A : index [1] = {98}
+A : index [2] = {97}
+A : index [3] = {96}
+A : index [4] = {93}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+top-a : 4
+top-b : 94
+RIGHT = |MED=47|NB=6|TOP=94|
+PUSH A: 95
+PUSH A: 94
+PUSH A: 91
+PUSH A: 92
+PUSH A: 89
+PUSH A: 88
+LEFT = |MED=94|NB=3|TOP=10|
+PUSH B: 88
+PUSH B: 89
+PUSH B: 91
+LEFT = |MED=96|NB=2|TOP=7|
+A : index [0] = {99}
+A : index [1] = {98}
+A : index [2] = {97}
+A : index [3] = {96}
+A : index [4] = {95}
+A : index [5] = {94}
+A : index [6] = {93}
+A : index [7] = {92}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+top-a : 7
+top-b : 91
+RIGHT = |MED=46|NB=3|TOP=91|
+PUSH A: 91
+PUSH A: 89
+PUSH A: 88
+LEFT = |MED=94|NB=2|TOP=10|
+A : index [0] = {99}
+A : index [1] = {98}
+A : index [2] = {97}
+A : index [3] = {96}
+A : index [4] = {95}
+A : index [5] = {94}
+A : index [6] = {93}
+A : index [7] = {92}
+A : index [8] = {91}
+A : index [9] = {89}
+A : index [10] = {88}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+top-a : 10
+top-b : 88
+RIGHT = |MED=44|NB=12|TOP=88|
+PUSH A: 90
+PUSH A: 87
+PUSH A: 81
+PUSH A: 82
+PUSH A: 80
+PUSH A: 75
+PUSH A: 79
+PUSH A: 84
+PUSH A: 86
+PUSH A: 78
+PUSH A: 85
+PUSH A: 77
+LEFT = |MED=88|NB=6|TOP=22|
+PUSH B: 77
+PUSH B: 85
+PUSH B: 78
+PUSH B: 86
+PUSH B: 84
+PUSH B: 79
+LEFT = |MED=91|NB=3|TOP=16|
+PUSH B: 75
+PUSH B: 80
+PUSH B: 82
+LEFT = |MED=93|NB=2|TOP=13|
+A : index [0] = {88}
+A : index [1] = {99}
+A : index [2] = {98}
+A : index [3] = {97}
+A : index [4] = {96}
+A : index [5] = {95}
+A : index [6] = {94}
+A : index [7] = {93}
+A : index [8] = {92}
+A : index [9] = {91}
+A : index [10] = {89}
+A : index [11] = {90}
+A : index [12] = {81}
+A : index [13] = {87}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+top-a : 13
+top-b : 85
+RIGHT = |MED=43|NB=3|TOP=85|
+PUSH A: 82
+PUSH A: 80
+PUSH A: 75
+LEFT = |MED=91|NB=2|TOP=16|
+A : index [0] = {88}
+A : index [1] = {99}
+A : index [2] = {98}
+A : index [3] = {97}
+A : index [4] = {96}
+A : index [5] = {95}
+A : index [6] = {94}
+A : index [7] = {93}
+A : index [8] = {92}
+A : index [9] = {91}
+A : index [10] = {89}
+A : index [11] = {90}
+A : index [12] = {87}
+A : index [13] = {82}
+A : index [14] = {80}
+A : index [15] = {75}
+A : index [16] = {81}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+top-a : 16
+top-b : 82
+RIGHT = |MED=41|NB=6|TOP=82|
+PUSH A: 79
+PUSH A: 84
+PUSH A: 86
+PUSH A: 78
+PUSH A: 85
+PUSH A: 77
+LEFT = |MED=88|NB=3|TOP=22|
+PUSH B: 77
+PUSH B: 75
+PUSH B: 85
+LEFT = |MED=90|NB=2|TOP=19|
+A : index [0] = {88}
+A : index [1] = {99}
+A : index [2] = {98}
+A : index [3] = {97}
+A : index [4] = {96}
+A : index [5] = {95}
+A : index [6] = {94}
+A : index [7] = {93}
+A : index [8] = {92}
+A : index [9] = {91}
+A : index [10] = {89}
+A : index [11] = {90}
+A : index [12] = {87}
+A : index [13] = {82}
+A : index [14] = {80}
+A : index [15] = {81}
+A : index [16] = {79}
+A : index [17] = {84}
+A : index [18] = {78}
+A : index [19] = {86}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+top-a : 19
+top-b : 79
+RIGHT = |MED=40|NB=3|TOP=79|
+PUSH A: 85
+PUSH A: 75
+PUSH A: 77
+LEFT = |MED=88|NB=2|TOP=22|
+A : index [0] = {88}
+A : index [1] = {99}
+A : index [2] = {98}
+A : index [3] = {97}
+A : index [4] = {96}
+A : index [5] = {95}
+A : index [6] = {94}
+A : index [7] = {93}
+A : index [8] = {92}
+A : index [9] = {91}
+A : index [10] = {89}
+A : index [11] = {90}
+A : index [12] = {87}
+A : index [13] = {82}
+A : index [14] = {80}
+A : index [15] = {81}
+A : index [16] = {79}
+A : index [17] = {84}
+A : index [18] = {86}
+A : index [19] = {85}
+A : index [20] = {75}
+A : index [21] = {77}
+A : index [22] = {78}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+top-a : 22
+top-b : 76
+RIGHT = |MED=38|NB=25|TOP=76|
+PUSH A: 76
+PUSH A: 83
+PUSH A: 65
+PUSH A: 57
+PUSH A: 53
+PUSH A: 58
+PUSH A: 54
+PUSH A: 63
+PUSH A: 59
+PUSH A: 60
+PUSH A: 73
+PUSH A: 70
+PUSH A: 64
+PUSH A: 50
+PUSH A: 69
+PUSH A: 56
+PUSH A: 62
+PUSH A: 61
+PUSH A: 71
+PUSH A: 55
+PUSH A: 72
+PUSH A: 67
+PUSH A: 74
+PUSH A: 51
+PUSH A: 68
+LEFT = |MED=76|NB=13|TOP=47|
+PUSH B: 68
+PUSH B: 51
+PUSH B: 74
+PUSH B: 67
+PUSH B: 72
+PUSH B: 55
+PUSH B: 71
+PUSH B: 61
+PUSH B: 62
+PUSH B: 56
+PUSH B: 69
+PUSH B: 50
+PUSH B: 64
+LEFT = |MED=82|NB=7|TOP=34|
+PUSH B: 70
+PUSH B: 73
+PUSH B: 60
+PUSH B: 59
+PUSH B: 63
+PUSH B: 54
+PUSH B: 58
+LEFT = |MED=86|NB=4|TOP=27|
+PUSH B: 53
+PUSH B: 57
+PUSH B: 65
+PUSH B: 83
+LEFT = |MED=88|NB=2|TOP=23|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {76}
+A : index [23] = {78}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+top-a : 23
+top-b : 75
+RIGHT = |MED=38|NB=3|TOP=75|
+PUSH A: 83
+PUSH A: 65
+PUSH A: 57
+LEFT = |MED=86|NB=2|TOP=26|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {57}
+A : index [26] = {76}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+top-a : 26
+top-b : 72
+RIGHT = |MED=36|NB=6|TOP=72|
+PUSH A: 53
+PUSH A: 58
+PUSH A: 54
+PUSH A: 63
+PUSH A: 59
+PUSH A: 60
+LEFT = |MED=83|NB=3|TOP=32|
+PUSH B: 60
+PUSH B: 57
+PUSH B: 59
+LEFT = |MED=85|NB=2|TOP=29|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {76}
+A : index [26] = {53}
+A : index [27] = {58}
+A : index [28] = {63}
+A : index [29] = {54}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+B : index [27] = {3}
+B : index [28] = {40}
+B : index [29] = {7}
+top-a : 29
+top-b : 69
+RIGHT = |MED=35|NB=3|TOP=69|
+PUSH A: 59
+PUSH A: 57
+PUSH A: 60
+LEFT = |MED=83|NB=2|TOP=32|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {76}
+A : index [26] = {53}
+A : index [27] = {58}
+A : index [28] = {54}
+A : index [29] = {59}
+A : index [30] = {57}
+A : index [31] = {60}
+A : index [32] = {63}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+B : index [27] = {3}
+B : index [28] = {40}
+B : index [29] = {7}
+B : index [30] = {45}
+B : index [31] = {46}
+B : index [32] = {48}
+top-a : 32
+top-b : 66
+RIGHT = |MED=33|NB=12|TOP=66|
+PUSH A: 73
+PUSH A: 70
+PUSH A: 64
+PUSH A: 50
+PUSH A: 69
+PUSH A: 56
+PUSH A: 62
+PUSH A: 61
+PUSH A: 71
+PUSH A: 55
+PUSH A: 72
+PUSH A: 67
+LEFT = |MED=77|NB=6|TOP=44|
+PUSH B: 67
+PUSH B: 60
+PUSH B: 72
+PUSH B: 55
+PUSH B: 71
+PUSH B: 61
+LEFT = |MED=80|NB=3|TOP=38|
+PUSH B: 62
+PUSH B: 56
+PUSH B: 69
+LEFT = |MED=82|NB=2|TOP=35|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {76}
+A : index [26] = {53}
+A : index [27] = {58}
+A : index [28] = {54}
+A : index [29] = {59}
+A : index [30] = {57}
+A : index [31] = {63}
+A : index [32] = {73}
+A : index [33] = {70}
+A : index [34] = {50}
+A : index [35] = {64}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+B : index [27] = {3}
+B : index [28] = {40}
+B : index [29] = {7}
+B : index [30] = {45}
+B : index [31] = {46}
+B : index [32] = {48}
+B : index [33] = {19}
+B : index [34] = {18}
+B : index [35] = {13}
+top-a : 35
+top-b : 63
+RIGHT = |MED=32|NB=3|TOP=63|
+PUSH A: 69
+PUSH A: 56
+PUSH A: 62
+LEFT = |MED=80|NB=2|TOP=38|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {76}
+A : index [26] = {53}
+A : index [27] = {58}
+A : index [28] = {54}
+A : index [29] = {59}
+A : index [30] = {57}
+A : index [31] = {63}
+A : index [32] = {73}
+A : index [33] = {70}
+A : index [34] = {64}
+A : index [35] = {69}
+A : index [36] = {56}
+A : index [37] = {62}
+A : index [38] = {50}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+B : index [27] = {3}
+B : index [28] = {40}
+B : index [29] = {7}
+B : index [30] = {45}
+B : index [31] = {46}
+B : index [32] = {48}
+B : index [33] = {19}
+B : index [34] = {18}
+B : index [35] = {13}
+B : index [36] = {1}
+B : index [37] = {2}
+B : index [38] = {43}
+top-a : 38
+top-b : 60
+RIGHT = |MED=30|NB=6|TOP=60|
+PUSH A: 61
+PUSH A: 71
+PUSH A: 55
+PUSH A: 72
+PUSH A: 60
+PUSH A: 67
+LEFT = |MED=77|NB=3|TOP=44|
+PUSH B: 67
+PUSH B: 62
+PUSH B: 60
+LEFT = |MED=79|NB=2|TOP=41|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {76}
+A : index [26] = {53}
+A : index [27] = {58}
+A : index [28] = {54}
+A : index [29] = {59}
+A : index [30] = {57}
+A : index [31] = {63}
+A : index [32] = {73}
+A : index [33] = {70}
+A : index [34] = {64}
+A : index [35] = {69}
+A : index [36] = {56}
+A : index [37] = {50}
+A : index [38] = {61}
+A : index [39] = {71}
+A : index [40] = {72}
+A : index [41] = {55}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+B : index [27] = {3}
+B : index [28] = {40}
+B : index [29] = {7}
+B : index [30] = {45}
+B : index [31] = {46}
+B : index [32] = {48}
+B : index [33] = {19}
+B : index [34] = {18}
+B : index [35] = {13}
+B : index [36] = {1}
+B : index [37] = {2}
+B : index [38] = {43}
+B : index [39] = {20}
+B : index [40] = {14}
+B : index [41] = {16}
+top-a : 41
+top-b : 57
+RIGHT = |MED=29|NB=3|TOP=57|
+PUSH A: 60
+PUSH A: 62
+PUSH A: 67
+LEFT = |MED=77|NB=2|TOP=44|
+A : index [0] = {77}
+A : index [1] = {88}
+A : index [2] = {99}
+A : index [3] = {98}
+A : index [4] = {97}
+A : index [5] = {96}
+A : index [6] = {95}
+A : index [7] = {94}
+A : index [8] = {93}
+A : index [9] = {92}
+A : index [10] = {91}
+A : index [11] = {89}
+A : index [12] = {90}
+A : index [13] = {87}
+A : index [14] = {82}
+A : index [15] = {80}
+A : index [16] = {81}
+A : index [17] = {79}
+A : index [18] = {84}
+A : index [19] = {86}
+A : index [20] = {85}
+A : index [21] = {75}
+A : index [22] = {78}
+A : index [23] = {83}
+A : index [24] = {65}
+A : index [25] = {76}
+A : index [26] = {53}
+A : index [27] = {58}
+A : index [28] = {54}
+A : index [29] = {59}
+A : index [30] = {57}
+A : index [31] = {63}
+A : index [32] = {73}
+A : index [33] = {70}
+A : index [34] = {64}
+A : index [35] = {69}
+A : index [36] = {56}
+A : index [37] = {50}
+A : index [38] = {61}
+A : index [39] = {71}
+A : index [40] = {55}
+A : index [41] = {60}
+A : index [42] = {62}
+A : index [43] = {67}
+A : index [44] = {72}
+B : index [0] = {8}
+B : index [1] = {5}
+B : index [2] = {41}
+B : index [3] = {37}
+B : index [4] = {47}
+B : index [5] = {17}
+B : index [6] = {15}
+B : index [7] = {32}
+B : index [8] = {10}
+B : index [9] = {36}
+B : index [10] = {4}
+B : index [11] = {33}
+B : index [12] = {30}
+B : index [13] = {34}
+B : index [14] = {21}
+B : index [15] = {29}
+B : index [16] = {39}
+B : index [17] = {25}
+B : index [18] = {27}
+B : index [19] = {24}
+B : index [20] = {0}
+B : index [21] = {28}
+B : index [22] = {42}
+B : index [23] = {22}
+B : index [24] = {38}
+B : index [25] = {23}
+B : index [26] = {44}
+B : index [27] = {3}
+B : index [28] = {40}
+B : index [29] = {7}
+B : index [30] = {45}
+B : index [31] = {46}
+B : index [32] = {48}
+B : index [33] = {19}
+B : index [34] = {18}
+B : index [35] = {13}
+B : index [36] = {1}
+B : index [37] = {2}
+B : index [38] = {43}
+B : index [39] = {20}
+B : index [40] = {14}
+B : index [41] = {16}
+B : index [42] = {35}
+B : index [43] = {26}
+B : index [44] = {31}
+top-a : 44
+top-b : 54
+RIGHT = |MED=27|NB=50|TOP=54|
+PUSH A: 74
+PUSH A: 51
+PUSH A: 68
+PUSH A: 66
+PUSH A: 52
+PUSH A: 49
+PUSH A: 31
+PUSH A: 35
+PUSH A: 43
+PUSH A: 48
+PUSH A: 46
+PUSH A: 45
+PUSH A: 40
+PUSH A: 44
+PUSH A: 38
+PUSH A: 42
+PUSH A: 28
+PUSH A: 39
+PUSH A: 29
+PUSH A: 34
+PUSH A: 30
+PUSH A: 33
+PUSH A: 36
+PUSH A: 32
+PUSH A: 47
+PUSH A: 37
+PUSH A: 41
+LEFT = |MED=64|NB=25|TOP=71|
+PUSH B: 41
+PUSH B: 37
+PUSH B: 47
+PUSH B: 32
+PUSH B: 36
+PUSH B: 33
+PUSH B: 30
+PUSH B: 34
+PUSH B: 29
+PUSH B: 39
+PUSH B: 28
+PUSH B: 42
+PUSH B: 38
+PUSH B: 44
+PUSH B: 40
+PUSH B: 45
+PUSH B: 46
+PUSH B: 48
+PUSH B: 43
+PUSH B: 35
+PUSH B: 31
+PUSH B: 49
+PUSH B: 52
+PUSH B: 51
+LEFT = |MED=76|NB=13|TOP=47|
+PUSH B: 74
+PUSH B: 72
+PUSH B: 62
+PUSH B: 60
+PUSH B: 55
+PUSH B: 71
+PUSH B: 61
+PUSH B: 50
+PUSH B: 56
+PUSH B: 69
+PUSH B: 64
+PUSH B: 70
+PUSH B: 73
+LEFT = |MED=82|NB=7|TOP=34|
+PUSH B: 63
+PUSH B: 57
+PUSH B: 59
+PUSH B: 54
+PUSH B: 58
+PUSH B: 53
+PUSH B: 76
+LEFT = |MED=86|NB=4|TOP=27|
+PUSH B: 65
+PUSH B: 83
+PUSH B: 78
+PUSH B: 75
+LEFT = |MED=88|NB=2|TOP=23|
+A : index [0] = {68}
+A : index [1] = {66}
+A : index [2] = {67}
+A : index [3] = {77}
+A : index [4] = {88}
+A : index [5] = {99}
+A : index [6] = {98}
+A : index [7] = {97}
+A : index [8] = {96}
+A : index [9] = {95}
+A : index [10] = {94}
+A : index [11] = {93}
+A : index [12] = {92}
+A : index [13] = {91}
+A : index [14] = {89}
+A : index [15] = {90}
+A : index [16] = {87}
+A : index [17] = {82}
+A : index [18] = {80}
+A : index [19] = {81}
+A : index [20] = {79}
+A : index [21] = {84}
+A : index [22] = {85}
+A : index [23] = {86}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+top-a : 23
+top-b : 75
+RIGHT = |MED=38|NB=3|TOP=75|
+PUSH A: 75
+PUSH A: 78
+PUSH A: 83
+LEFT = |MED=86|NB=2|TOP=26|
+A : index [0] = {68}
+A : index [1] = {66}
+A : index [2] = {67}
+A : index [3] = {77}
+A : index [4] = {88}
+A : index [5] = {99}
+A : index [6] = {98}
+A : index [7] = {97}
+A : index [8] = {96}
+A : index [9] = {95}
+A : index [10] = {94}
+A : index [11] = {93}
+A : index [12] = {92}
+A : index [13] = {91}
+A : index [14] = {89}
+A : index [15] = {90}
+A : index [16] = {87}
+A : index [17] = {82}
+A : index [18] = {80}
+A : index [19] = {81}
+A : index [20] = {79}
+A : index [21] = {84}
+A : index [22] = {86}
+A : index [23] = {75}
+A : index [24] = {78}
+A : index [25] = {83}
+A : index [26] = {85}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+top-a : 26
+top-b : 72
+RIGHT = |MED=36|NB=6|TOP=72|
+PUSH A: 65
+PUSH A: 76
+PUSH A: 53
+PUSH A: 58
+PUSH A: 54
+PUSH A: 59
+LEFT = |MED=83|NB=3|TOP=32|
+PUSH B: 59
+PUSH B: 54
+PUSH B: 58
+LEFT = |MED=85|NB=2|TOP=29|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {53}
+A : index [29] = {76}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+top-a : 29
+top-b : 69
+RIGHT = |MED=35|NB=3|TOP=69|
+PUSH A: 58
+PUSH A: 54
+PUSH A: 59
+LEFT = |MED=83|NB=2|TOP=32|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {59}
+A : index [32] = {53}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {32}
+B : index [32] = {36}
+top-a : 32
+top-b : 66
+RIGHT = |MED=33|NB=12|TOP=66|
+PUSH A: 57
+PUSH A: 63
+PUSH A: 73
+PUSH A: 70
+PUSH A: 64
+PUSH A: 69
+PUSH A: 56
+PUSH A: 50
+PUSH A: 61
+PUSH A: 71
+PUSH A: 55
+PUSH A: 60
+LEFT = |MED=77|NB=6|TOP=44|
+PUSH B: 60
+PUSH B: 59
+PUSH B: 55
+PUSH B: 71
+PUSH B: 61
+PUSH B: 50
+LEFT = |MED=80|NB=3|TOP=38|
+PUSH B: 56
+PUSH B: 69
+PUSH B: 64
+LEFT = |MED=82|NB=2|TOP=35|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {70}
+A : index [35] = {73}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {32}
+B : index [32] = {36}
+B : index [33] = {33}
+B : index [34] = {30}
+B : index [35] = {34}
+top-a : 35
+top-b : 63
+RIGHT = |MED=32|NB=3|TOP=63|
+PUSH A: 64
+PUSH A: 69
+PUSH A: 56
+LEFT = |MED=80|NB=2|TOP=38|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {56}
+A : index [38] = {70}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {32}
+B : index [32] = {36}
+B : index [33] = {33}
+B : index [34] = {30}
+B : index [35] = {34}
+B : index [36] = {29}
+B : index [37] = {39}
+B : index [38] = {28}
+top-a : 38
+top-b : 60
+RIGHT = |MED=30|NB=6|TOP=60|
+PUSH A: 50
+PUSH A: 61
+PUSH A: 71
+PUSH A: 55
+PUSH A: 59
+PUSH A: 60
+LEFT = |MED=77|NB=3|TOP=44|
+PUSH B: 60
+PUSH B: 56
+PUSH B: 59
+LEFT = |MED=79|NB=2|TOP=41|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {55}
+A : index [41] = {71}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {32}
+B : index [32] = {36}
+B : index [33] = {33}
+B : index [34] = {30}
+B : index [35] = {34}
+B : index [36] = {29}
+B : index [37] = {39}
+B : index [38] = {28}
+B : index [39] = {42}
+B : index [40] = {38}
+B : index [41] = {44}
+top-a : 41
+top-b : 57
+RIGHT = |MED=29|NB=3|TOP=57|
+PUSH A: 59
+PUSH A: 56
+PUSH A: 60
+LEFT = |MED=77|NB=2|TOP=44|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {60}
+A : index [44] = {55}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {32}
+B : index [32] = {36}
+B : index [33] = {33}
+B : index [34] = {30}
+B : index [35] = {34}
+B : index [36] = {29}
+B : index [37] = {39}
+B : index [38] = {28}
+B : index [39] = {42}
+B : index [40] = {38}
+B : index [41] = {44}
+B : index [42] = {40}
+B : index [43] = {45}
+B : index [44] = {46}
+top-a : 44
+top-b : 54
+RIGHT = |MED=27|NB=25|TOP=54|
+PUSH A: 62
+PUSH A: 72
+PUSH A: 74
+PUSH A: 51
+PUSH A: 52
+PUSH A: 49
+PUSH A: 31
+PUSH A: 35
+PUSH A: 43
+PUSH A: 48
+PUSH A: 46
+PUSH A: 45
+PUSH A: 40
+PUSH A: 44
+PUSH A: 38
+PUSH A: 42
+PUSH A: 28
+PUSH A: 39
+PUSH A: 29
+PUSH A: 34
+PUSH A: 30
+PUSH A: 33
+PUSH A: 36
+PUSH A: 32
+PUSH A: 47
+LEFT = |MED=65|NB=13|TOP=69|
+PUSH B: 47
+PUSH B: 60
+PUSH B: 32
+PUSH B: 36
+PUSH B: 33
+PUSH B: 30
+PUSH B: 34
+PUSH B: 29
+PUSH B: 39
+PUSH B: 28
+PUSH B: 42
+PUSH B: 38
+PUSH B: 44
+LEFT = |MED=71|NB=7|TOP=56|
+PUSH B: 40
+PUSH B: 45
+PUSH B: 46
+PUSH B: 48
+PUSH B: 43
+PUSH B: 35
+PUSH B: 31
+LEFT = |MED=75|NB=4|TOP=49|
+PUSH B: 49
+PUSH B: 52
+PUSH B: 51
+PUSH B: 74
+LEFT = |MED=77|NB=2|TOP=45|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {72}
+A : index [45] = {62}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {33}
+B : index [35] = {30}
+B : index [36] = {34}
+B : index [37] = {29}
+B : index [38] = {39}
+B : index [39] = {28}
+B : index [40] = {42}
+B : index [41] = {38}
+B : index [42] = {44}
+B : index [43] = {40}
+B : index [44] = {45}
+B : index [45] = {46}
+top-a : 45
+top-b : 53
+RIGHT = |MED=27|NB=3|TOP=53|
+PUSH A: 74
+PUSH A: 51
+PUSH A: 52
+LEFT = |MED=75|NB=2|TOP=48|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {52}
+A : index [48] = {72}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {33}
+B : index [35] = {30}
+B : index [36] = {34}
+B : index [37] = {29}
+B : index [38] = {39}
+B : index [39] = {28}
+B : index [40] = {42}
+B : index [41] = {38}
+B : index [42] = {44}
+B : index [43] = {40}
+B : index [44] = {45}
+B : index [45] = {46}
+B : index [46] = {48}
+B : index [47] = {43}
+B : index [48] = {35}
+top-a : 48
+top-b : 50
+RIGHT = |MED=25|NB=6|TOP=50|
+PUSH A: 49
+PUSH A: 31
+PUSH A: 35
+PUSH A: 43
+PUSH A: 48
+PUSH A: 46
+LEFT = |MED=72|NB=3|TOP=54|
+PUSH B: 46
+PUSH B: 52
+PUSH B: 48
+LEFT = |MED=74|NB=2|TOP=51|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {72}
+A : index [48] = {49}
+A : index [49] = {31}
+A : index [50] = {43}
+A : index [51] = {35}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {33}
+B : index [35] = {30}
+B : index [36] = {34}
+B : index [37] = {29}
+B : index [38] = {39}
+B : index [39] = {28}
+B : index [40] = {42}
+B : index [41] = {38}
+B : index [42] = {44}
+B : index [43] = {40}
+B : index [44] = {45}
+B : index [45] = {46}
+B : index [46] = {52}
+B : index [47] = {48}
+top-a : 51
+top-b : 47
+RIGHT = |MED=24|NB=3|TOP=47|
+PUSH A: 48
+PUSH A: 52
+PUSH A: 46
+LEFT = |MED=72|NB=2|TOP=54|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {72}
+A : index [48] = {49}
+A : index [49] = {31}
+A : index [50] = {35}
+A : index [51] = {48}
+A : index [52] = {52}
+A : index [53] = {46}
+A : index [54] = {43}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {33}
+B : index [35] = {30}
+B : index [36] = {34}
+B : index [37] = {29}
+B : index [38] = {39}
+B : index [39] = {28}
+B : index [40] = {42}
+B : index [41] = {38}
+B : index [42] = {44}
+B : index [43] = {40}
+B : index [44] = {45}
+top-a : 54
+top-b : 44
+RIGHT = |MED=22|NB=12|TOP=44|
+PUSH A: 45
+PUSH A: 40
+PUSH A: 44
+PUSH A: 38
+PUSH A: 42
+PUSH A: 28
+PUSH A: 39
+PUSH A: 29
+PUSH A: 34
+PUSH A: 30
+PUSH A: 33
+PUSH A: 36
+LEFT = |MED=66|NB=6|TOP=66|
+PUSH B: 36
+PUSH B: 46
+PUSH B: 33
+PUSH B: 30
+PUSH B: 34
+PUSH B: 29
+LEFT = |MED=69|NB=3|TOP=60|
+PUSH B: 39
+PUSH B: 28
+PUSH B: 42
+LEFT = |MED=71|NB=2|TOP=57|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {72}
+A : index [48] = {49}
+A : index [49] = {31}
+A : index [50] = {35}
+A : index [51] = {48}
+A : index [52] = {52}
+A : index [53] = {43}
+A : index [54] = {45}
+A : index [55] = {40}
+A : index [56] = {38}
+A : index [57] = {44}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {46}
+B : index [35] = {33}
+B : index [36] = {30}
+B : index [37] = {34}
+B : index [38] = {29}
+B : index [39] = {39}
+B : index [40] = {28}
+B : index [41] = {42}
+top-a : 57
+top-b : 41
+RIGHT = |MED=21|NB=3|TOP=41|
+PUSH A: 42
+PUSH A: 28
+PUSH A: 39
+LEFT = |MED=69|NB=2|TOP=60|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {72}
+A : index [48] = {49}
+A : index [49] = {31}
+A : index [50] = {35}
+A : index [51] = {48}
+A : index [52] = {52}
+A : index [53] = {43}
+A : index [54] = {45}
+A : index [55] = {40}
+A : index [56] = {44}
+A : index [57] = {42}
+A : index [58] = {28}
+A : index [59] = {39}
+A : index [60] = {38}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {46}
+B : index [35] = {33}
+B : index [36] = {30}
+B : index [37] = {34}
+B : index [38] = {29}
+top-a : 60
+top-b : 38
+RIGHT = |MED=19|NB=6|TOP=38|
+PUSH A: 29
+PUSH A: 34
+PUSH A: 30
+PUSH A: 33
+PUSH A: 46
+PUSH A: 36
+LEFT = |MED=66|NB=3|TOP=66|
+PUSH B: 36
+PUSH B: 39
+PUSH B: 46
+LEFT = |MED=68|NB=2|TOP=63|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {72}
+A : index [48] = {49}
+A : index [49] = {31}
+A : index [50] = {35}
+A : index [51] = {48}
+A : index [52] = {52}
+A : index [53] = {43}
+A : index [54] = {45}
+A : index [55] = {40}
+A : index [56] = {44}
+A : index [57] = {42}
+A : index [58] = {28}
+A : index [59] = {38}
+A : index [60] = {29}
+A : index [61] = {34}
+A : index [62] = {33}
+A : index [63] = {30}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+B : index [33] = {36}
+B : index [34] = {39}
+B : index [35] = {46}
+top-a : 63
+top-b : 35
+RIGHT = |MED=18|NB=3|TOP=35|
+PUSH A: 46
+PUSH A: 39
+PUSH A: 36
+LEFT = |MED=66|NB=2|TOP=66|
+A : index [0] = {83}
+A : index [1] = {68}
+A : index [2] = {66}
+A : index [3] = {67}
+A : index [4] = {77}
+A : index [5] = {88}
+A : index [6] = {99}
+A : index [7] = {98}
+A : index [8] = {97}
+A : index [9] = {96}
+A : index [10] = {95}
+A : index [11] = {94}
+A : index [12] = {93}
+A : index [13] = {92}
+A : index [14] = {91}
+A : index [15] = {89}
+A : index [16] = {90}
+A : index [17] = {87}
+A : index [18] = {82}
+A : index [19] = {80}
+A : index [20] = {81}
+A : index [21] = {79}
+A : index [22] = {84}
+A : index [23] = {86}
+A : index [24] = {75}
+A : index [25] = {78}
+A : index [26] = {85}
+A : index [27] = {65}
+A : index [28] = {76}
+A : index [29] = {58}
+A : index [30] = {54}
+A : index [31] = {53}
+A : index [32] = {57}
+A : index [33] = {63}
+A : index [34] = {73}
+A : index [35] = {64}
+A : index [36] = {69}
+A : index [37] = {70}
+A : index [38] = {50}
+A : index [39] = {61}
+A : index [40] = {71}
+A : index [41] = {59}
+A : index [42] = {56}
+A : index [43] = {55}
+A : index [44] = {62}
+A : index [45] = {74}
+A : index [46] = {51}
+A : index [47] = {72}
+A : index [48] = {49}
+A : index [49] = {31}
+A : index [50] = {35}
+A : index [51] = {48}
+A : index [52] = {52}
+A : index [53] = {43}
+A : index [54] = {45}
+A : index [55] = {40}
+A : index [56] = {44}
+A : index [57] = {42}
+A : index [58] = {28}
+A : index [59] = {38}
+A : index [60] = {29}
+A : index [61] = {34}
+A : index [62] = {30}
+A : index [63] = {46}
+A : index [64] = {39}
+A : index [65] = {36}
+A : index [66] = {33}
+B : index [0] = {20}
+B : index [1] = {14}
+B : index [2] = {16}
+B : index [3] = {26}
+B : index [4] = {12}
+B : index [5] = {11}
+B : index [6] = {9}
+B : index [7] = {6}
+B : index [8] = {8}
+B : index [9] = {5}
+B : index [10] = {17}
+B : index [11] = {15}
+B : index [12] = {10}
+B : index [13] = {4}
+B : index [14] = {21}
+B : index [15] = {25}
+B : index [16] = {27}
+B : index [17] = {24}
+B : index [18] = {0}
+B : index [19] = {22}
+B : index [20] = {23}
+B : index [21] = {3}
+B : index [22] = {7}
+B : index [23] = {19}
+B : index [24] = {18}
+B : index [25] = {13}
+B : index [26] = {1}
+B : index [27] = {2}
+B : index [28] = {41}
+B : index [29] = {37}
+B : index [30] = {47}
+B : index [31] = {60}
+B : index [32] = {32}
+top-a : 66
+top-b : 32
