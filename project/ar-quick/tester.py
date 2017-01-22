@@ -26,6 +26,8 @@ def test_n_time_x_elem(nbr, x):
 		lst = re.findall("\d+", str(output))
 		print ' '.join(lst)
 		output = subprocess.check_output([os.path.realpath("push_swap")] + lst)
+		res = subprocess.check_output([os.path.realpath("checker")] + lst)
+		print res
 		nbr_op = len(output.split()) 
 		if i == 0:
 			min_op = max_op = nbr_op
@@ -35,6 +37,7 @@ def test_n_time_x_elem(nbr, x):
 		if nbr_op < min_op:
 			min_op = nbr_op
 		i = i + 1
+	#print output,
 	print str(nbr) + " tests for " + str(x) + " elements"
 	print result
 	print "minimum d'operations: " + str(min_op)

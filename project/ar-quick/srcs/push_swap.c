@@ -6,16 +6,30 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 15:49:26 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/21 19:16:32 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/22 15:10:16 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int		main(int ac, char **av)
+static void push_swap(int ac, char **av)
 {
 	t_stk	*stk_a;
 	t_stk	*stk_b;
+
+	stk_a = stack_construct(av, ac);
+	stk_b = stack_construct(NULL, ac);
+	if (stk_a->stk->top > 0 && solve_order(stk_a) != 1)
+	{
+		solve_stack(stk_a, stk_b);
+		cmd_print(stk_a);
+	}
+	clean_stack(&stk_a);
+	clean_stack(&stk_b);	
+}
+
+int		main(int ac, char **av)
+{
 
 	av++;
 	ac--;
@@ -23,15 +37,7 @@ int		main(int ac, char **av)
 		return (0);
 	else
 	{
-		stk_a = stack_construct(av, ac);
-		stk_b = stack_construct(NULL, ac);
-		if (stk_a->stk->top > 0 && solve_order(stk_a) != 1)
-		{
-			solve_stack(stk_a, stk_b);
-			//cmd_print(stk_a);
-		}
-		clean_stack(&stk_a);
-		clean_stack(&stk_b);
+		push_swap(ac, av);
 	}
 	return (0);
 }
