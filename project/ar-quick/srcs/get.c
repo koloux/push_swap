@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/13 17:05:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/17 18:03:14 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/23 14:18:54 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	get_max(t_stk *stack)
 	return (max);
 }
 
-int get_median(t_stk *stack)
+int	get_median(t_stk *stack)
 {
 	int i;
 	int	j;
@@ -60,7 +60,7 @@ int get_median(t_stk *stack)
 		while (i < stack->stk->top + 1)
 		{
 			if (nb != stack->stk->nb[i])
-				(stack->stk->nb[i] > nb) ? med++ : 	med--;
+				(stack->stk->nb[i] > nb) ? med++ : med--;
 			i++;
 		}
 		if (med == (stack->stk->top % 2 == 0 ? 0 : -1))

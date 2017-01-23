@@ -6,13 +6,13 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 15:49:26 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/23 11:53:26 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/23 14:46:45 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void push_swap(int ac, char **av)
+static void	push_swap(int ac, char **av)
 {
 	t_stk	*stk_a;
 	t_stk	*stk_b;
@@ -25,12 +25,11 @@ static void push_swap(int ac, char **av)
 		cmd_print(stk_a);
 	}
 	clean_stack(&stk_a);
-	clean_stack(&stk_b);	
+	clean_stack(&stk_b);
 }
 
-int		main(int ac, char **av)
+int			main(int ac, char **av)
 {
-
 	av++;
 	ac--;
 	if (error_nbr(ac, av) != 0)

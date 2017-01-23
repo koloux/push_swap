@@ -12,7 +12,9 @@ def test_all_permutations_for_n_elem(nbr):
 	result = []
 	for elem in x:
 		lst = re.findall("\d+", str(elem))
+		print lst
 		output = subprocess.check_output([os.path.realpath("push_swap")] + lst)
+		#print output
 		result.append(len(output.split()))
 	print "All permutations for " + str(nbr) + " elements"
 	print result
@@ -24,10 +26,10 @@ def test_n_time_x_elem(nbr, x):
 	while i < nbr:
 		output = subprocess.check_output(['ruby', '-e', "puts (0.." + str(x - 1) + ").to_a.shuffle.join(' ')"])
 		lst = re.findall("\d+", str(output))
-		print ' '.join(lst)
+		#print ' '.join(lst)
 		output = subprocess.check_output([os.path.realpath("push_swap")] + lst)
 		res = subprocess.check_output([os.path.realpath("checker")] + lst)
-		print res
+		#print res
 		nbr_op = len(output.split()) 
 		if i == 0:
 			min_op = max_op = nbr_op
@@ -45,7 +47,7 @@ def test_n_time_x_elem(nbr, x):
 	print "---------------------"
 
 if (len(sys.argv) == 2):
-	#test_all_permutations_for_n_elem(5);
-	test_n_time_x_elem(int(sys.argv[1]), 100)
+	test_all_permutations_for_n_elem(int(sys.argv[1]));
+	#test_n_time_x_elem(int(sys.argv[1]), 100)
 else:
 	print "usage: ./script argument"

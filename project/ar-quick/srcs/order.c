@@ -6,13 +6,13 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 18:01:12 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/23 12:11:41 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/23 14:20:57 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int				solve_order(t_stk *stack)
+int		solve_order(t_stk *stack)
 {
 	int	i;
 
@@ -40,7 +40,7 @@ int		order_reverse(t_stk *stack)
 	return (1);
 }
 
-void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b)
+void	solve_order_reverse(t_stk *stk_a, t_stk *stk_b)
 {
 	if (order_reverse(stk_a) == 1 && solve_order(stk_a) != 1)
 	{

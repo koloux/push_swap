@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/20 17:12:11 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/23 16:33:55 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,20 @@ typedef struct	s_stk
 	char		*op;
 	t_item		*stk;
 }				t_stk;
-void info(t_stk *stk_a, t_stk *stk_b, int ac);
+void info(t_stk *stk_a, t_stk *stk_b, int nb);
 
 int				order_reverse(t_stk *stack);
 t_stk			*stack_construct(char **param, int top);
 t_item			*item_construct(char **param, int top);
 void			solve_stack(t_stk *stk_a, t_stk *stk_b);
+void			soft_solve(t_stk *stk_a, t_stk *stk_b);
 int				solve_order(t_stk *stack);
+void			solve_secondary(t_stk *stk_a, t_stk *stk_b, int cmd);
 void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b);
 int				solve_right(t_stk *stk_a, t_stk *stk_b, int nb);
+void			solve_bis_r(t_stk *stk_a, t_stk *stk_b);
 int				solve_left(t_stk *stk_a, t_stk *stk_b, int nb);
+void			solve_bis_l(t_stk *stk_a, t_stk *stk_b, int nb);
 int				get_min(t_stk *stack);
 int				get_max(t_stk *stack);
 int				get_median(t_stk *stack);

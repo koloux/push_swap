@@ -22,6 +22,7 @@ FILES = $(F_DIR)/cmd.c \
 		$(F_DIR)/get.c \
 		$(F_DIR)/item.c \
 		$(F_DIR)/solve.c \
+		$(F_DIR)/solve_bis.c \
 		$(F_DIR)/soft_solve.c \
 		$(F_DIR)/stack.c \
 		$(F_DIR)/get_next_line.c \
