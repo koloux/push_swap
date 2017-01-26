@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/23 15:50:45 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/23 16:10:34 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/26 16:52:13 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,31 @@ void	solve_bis_r(t_stk *stk_a, t_stk *stk_b)
 		stk_a->rot(stk_a);
 		solve_secondary(stk_a, stk_b, 3);
 	}
-	stk_b->push(stk_b, stk_a, 1);
+	stk_a->push(stk_b, stk_a, 1);
 	cmd_join(&stk_a->op, "pb\n");
 	while (stk_a->stk->nb[0] < stk_a->stk->nb[stk_a->stk->top])
 	{
 		stk_a->rev(stk_a);
 		solve_secondary(stk_a, stk_b, 1);
+	}
+}
+
+void	solve_bis_r_med(t_stk *stk_a, t_stk *stk_b, int nb)
+{
+	int	i;
+	int	med;
+
+	i = 0;
+	med = get_median(stk_b);
+	while (i < nb)
+	{
+		if (stk_b->stk->nb[stk_b->stk->top] <= med)
+		{
+			stk_b->rot(stk_b);
+			cmd_add(stk_a, 3);
+		}
+		if (stk_b->stk->nb[stk_b->stk->top] > med)
+			solve_bis_r(stk_a, stk_b);
+		i++;
 	}
 }

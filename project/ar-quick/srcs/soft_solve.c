@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/23 18:30:19 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/26 16:00:19 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,16 @@ static void	soft_secondary(t_stk *stk_a, t_stk *stk_b, int cmd)
 		cmd += 3;
 	}
 	if (cmd == 2 &&
-			(stk_b->stk->nb[stk_b->stk->top - 1] >
-			 stk_b->stk->nb[stk_b->stk->top]))
+		(stk_b->stk->nb[stk_b->stk->top - 1] >
+		stk_b->stk->nb[stk_b->stk->top]))
 	{
 		stk_b->swap(stk_b);
 		cmd += 3;
 	}
 	if (cmd == 3 && (stk_b->stk->nb[0] > stk_b->stk->nb[stk_b->stk->top]
-				|| (stk_b->stk->nb[stk_b->stk->top - 1] >
-					stk_b->stk->nb[stk_b->stk->top]
-					&& stk_b->stk->nb[0] < stk_b->stk->nb[stk_b->stk->top - 1])))
+		|| (stk_b->stk->nb[stk_b->stk->top - 1] >
+		stk_b->stk->nb[stk_b->stk->top]
+		&& stk_b->stk->nb[0] < stk_b->stk->nb[stk_b->stk->top - 1])))
 	{
 		stk_b->rot(stk_b);
 		cmd += 3;
@@ -38,102 +38,76 @@ static void	soft_secondary(t_stk *stk_a, t_stk *stk_b, int cmd)
 	cmd_add(stk_a, cmd);
 }
 
-static void	solve_soft(t_stk *stk_a, t_stk *stk_b)
+static void	soft_pivot_bis(t_stk *stk_a, t_stk *stk_b, int med)
 {
-	int	min;
-
-	min = get_min(stk_a);
-	while (solve_order(stk_a) != 1
-			&& (min == stk_a->stk->nb[0] ||
-				min == stk_a->stk->nb[stk_a->stk->top] ||
-				min == stk_a->stk->nb[stk_a->stk->top - 1]))
+	if (stk_a->stk->nb[0] < med)
 	{
-		if (min == stk_a->stk->nb[stk_a->stk->top])
-			stk_a->push(stk_a, stk_b, 1);
-		if (min == stk_a->stk->nb[0])
-		{
-			stk_a->rev(stk_a);
-			soft_secondary(stk_a, stk_b, 1);
-		}
-		if (min == stk_a->stk->nb[stk_a->stk->top - 1])
-		{
-			stk_a->swap(stk_a);
-			soft_secondary(stk_a, stk_b, 2);
-		}
-		min = get_min(stk_a);
+		stk_a->rev(stk_a);
+		soft_secondary(stk_a, stk_b, 1);
 	}
-}
-
-static void	solve_end(t_stk *stk_a, t_stk *stk_b)
-{
-	if (solve_order(stk_b))
+	else if (stk_a->stk->nb[stk_a->stk->top] <
+			stk_a->stk->nb[stk_a->stk->top - 1])
 	{
-		while (stk_b->stk->top != -1)
-			stk_a->push(stk_b, stk_a, 0);
+		stk_a->swap(stk_a);
+		soft_secondary(stk_a, stk_b, 2);
 	}
 	else
 	{
-		while (stk_b->stk->top != -1)
+		stk_a->rot(stk_a);
+		soft_secondary(stk_a, stk_b, 3);
+	}
+}
+
+static void	soft_pivot(t_stk *stk_a, t_stk *stk_b)
+{
+	int	med;
+
+	med = get_median(stk_a);
+	while (solve_order(stk_a) != 1 && stk_a->stk->top > 1)
+	{
+		if (stk_a->stk->nb[stk_a->stk->top] < med)
+			stk_a->push(stk_a, stk_b, 1);
+		else if (stk_a->stk->nb[stk_a->stk->top] > med)
+			soft_pivot_bis(stk_a, stk_b, med);
+		else
 		{
-			if (get_max(stk_b) == stk_b->stk->nb[stk_b->stk->top])
-				stk_a->push(stk_b, stk_a, 0);
-			else if (get_max(stk_b) == stk_b->stk->nb[stk_b->stk->top - 1])
-			{
-				stk_b->swap(stk_b);
-				soft_secondary(stk_a, stk_b, 2);
-			}
-			else
-			{
-				stk_b->rot(stk_b);
-				soft_secondary(stk_a, stk_b, 3);
-			}
+			stk_a->push(stk_a, stk_b, 1);
+			med = get_median(stk_a);
 		}
 	}
 }
 
-static void	solve_pivot(t_stk *stk_a, t_stk *stk_b)
+static void	soft_end(t_stk *stk_a, t_stk *stk_b)
 {
-	if (stk_a->stk->nb[stk_a->stk->top] > stk_a->stk->nb[stk_a->stk->top / 2])
+	int	max;
+
+	if (solve_order(stk_a) != 1)
 	{
-		if (stk_a->stk->nb[0] < stk_a->stk->nb[stk_a->stk->top / 2])
+		stk_a->swap(stk_a);
+		soft_secondary(stk_a, stk_b, 2);
+	}
+	if (order_reverse(stk_b) != 1)
+	{
+		max = get_max(stk_b);
+		if (stk_b->stk->nb[stk_b->stk->top] == max)
+			stk_b->push(stk_b, stk_a, 0);
+		else if (stk_b->stk->nb[stk_b->stk->top] <
+				stk_b->stk->nb[stk_b->stk->top - 1])
 		{
-			stk_a->rev(stk_a);
-			soft_secondary(stk_a, stk_b, 1);
-		}
-		else if (stk_a->stk->nb[stk_a->stk->top - 1] <
-				stk_a->stk->nb[stk_a->stk->top / 2])
-		{
-			stk_a->swap(stk_a);
-			soft_secondary(stk_a, stk_b, 2);
+			stk_b->swap(stk_b);
+			cmd_join(&stk_a->op, "sb\n");
 		}
 		else
 		{
-			stk_a->rot(stk_a);
-			soft_secondary(stk_a, stk_b, 3);
+			stk_b->rot(stk_b);
+			cmd_join(&stk_a->op, "rb\n");
 		}
 	}
-	else
-		((solve_order(stk_a) == 1) ? solve_order(stk_b) :
-		 stk_a->push(stk_a, stk_b, 1));
 }
 
 void		soft_solve(t_stk *stk_a, t_stk *stk_b)
 {
 	solve_order_reverse(stk_a, stk_b);
-	while (solve_order(stk_a) != 1)
-	{
-		if (stk_a->stk->nb[stk_a->stk->top] == 2 &&
-				get_min(stk_a) == stk_a->stk->nb[1] &&
-				stk_a->stk->nb[stk_a->stk->top] > stk_a->stk->nb[0])
-		{
-			stk_a->rot(stk_a);
-			soft_secondary(stk_a, stk_b, 3);
-		}
-		else
-		{
-			solve_soft(stk_a, stk_b);
-			solve_pivot(stk_a, stk_b);
-		}
-	}
-	solve_end(stk_a, stk_b);
+	soft_pivot(stk_a, stk_b);
+	soft_end(stk_a, stk_b);
 }
