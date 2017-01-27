@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/13 17:05:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/26 15:45:59 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/27 15:38:23 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,15 @@ int	get_small(int i, int j, int k)
 	if (i < j && i < k)
 		return (1);
 	if (j < i && j < k)
+		return (2);
+	return (3);
+}
+
+int	get_high(int i, int j, int k)
+{
+	if (i > j && i > k)
+		return (1);
+	if (j > i && j > k)
 		return (2);
 	return (3);
 }

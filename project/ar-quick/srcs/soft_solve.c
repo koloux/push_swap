@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/26 16:00:19 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/27 11:47:09 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static void	soft_secondary(t_stk *stk_a, t_stk *stk_b, int cmd)
 		stk_b->rot(stk_b);
 		cmd += 3;
 	}
-	cmd_add(stk_a, cmd);
+	cmd_add_right(stk_a, cmd);
 }
 
 static void	soft_pivot_bis(t_stk *stk_a, t_stk *stk_b, int med)
