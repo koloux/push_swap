@@ -6,12 +6,11 @@
 /*   By: nhuber <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 17:28:36 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/27 17:28:05 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/28 20:03:59 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 void	solve_right(t_stk *stk_a, t_stk *stk_b, int cmd)
 {
@@ -25,13 +24,6 @@ void	solve_right(t_stk *stk_a, t_stk *stk_b, int cmd)
 		stk_b->swap(stk_b);
 		cmd += 3;
 	}
-	/*
-	if (cmd == 3 && STK_B->nb[TOP_B - 1] > STK_B->nb[TOP_B])
-	{
-		stk_b->rot(stk_b);
-		cmd += 3;
-	}
-	*/
 	cmd_add_right(stk_a, cmd);
 }
 

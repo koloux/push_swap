@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/27 15:38:42 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/28 19:06:50 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
 # define TOP_B stk_b->stk->top
 # define STK_A stk_a->stk
 # define STK_B stk_b->stk
-# define PUSH_A stk_a->push(stk_a, stk_b, 1)
-# define PUSH_B stk_a->push(stk_b, stk_a, 0)
 
 typedef struct	s_item
 {
@@ -52,6 +50,8 @@ void			solve_left(t_stk *stk_a, t_stk *stk_b, int cmd);
 void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b);
 int				quick_right(t_stk *stk_a, t_stk *stk_b, int nb);
 int				quick_left(t_stk *stk_a, t_stk *stk_b, int nb);
+//void			bubble_right(t_stk *stk_a, t_stk *stk_b);
+void			bubble_left(t_stk *stk_a, t_stk *stk_b);
 int				get_min(t_stk *stack);
 int				get_max(t_stk *stack);
 int				get_median(t_stk *stack);

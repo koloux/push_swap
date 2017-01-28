@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/27 15:24:43 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/27 17:29:27 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/28 20:10:37 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,12 @@ int		quick_left(t_stk *stk_a, t_stk *stk_b, int nb)
 	int	med;
 	int	i;
 
-	printf("QUICK-LEFT-|%d|-|%d|\n", get_median(stk_a), nb);
-	info(stk_a, stk_b, TOP_A + 1);
-	if (nb <= 2)
+	//printf("QUICK-LEFT-|%d|-|%d|\n", get_median(stk_a), nb);
+	//info(stk_a, stk_b, TOP_A + 1);
+	if (nb <= 7)
 	{
-		if (STK_A->nb[TOP_A] > STK_A->nb[TOP_A - 1])
-		{
-			stk_a->swap(stk_a);
-			solve_right(stk_a, stk_b, 2);
-		}
+		cmd_join(&stk_a->op, "here");
+		bubble_left(stk_a, stk_b);
 		return (1);
 	}
 	med = get_median(stk_a);
@@ -51,8 +48,8 @@ int		quick_right(t_stk *stk_a, t_stk *stk_b, int nb)
 	int	med;
 	int	i;
 
-	printf("QUICK-RIGHT-|%d|-|%d|\n", get_median(stk_b), nb);
-	info(stk_a, stk_b, TOP_B + 1);
+	//printf("QUICK-RIGHT-|%d|-|%d|\n", get_median(stk_b), nb);
+	//info(stk_a, stk_b, TOP_B + 1);
 	if (nb <= 2)
 	{
 		if (STK_B->nb[TOP_B] < STK_B->nb[TOP_B - 1])
@@ -60,6 +57,7 @@ int		quick_right(t_stk *stk_a, t_stk *stk_b, int nb)
 			stk_b->swap(stk_b);
 			solve_left(stk_a, stk_b, 2);
 		}
+		//bubble_right(stk_a, stk_b);
 		return (1);
 	}
 	med = get_median(stk_b);
@@ -69,32 +67,10 @@ int		quick_right(t_stk *stk_a, t_stk *stk_b, int nb)
 		if (STK_B->nb[TOP_B] < med)
 		{
 			stk_b->rot(stk_b);
-			//solve_left(stk_a, stk_b, 3);
-		}
-		/*
-		if (get_high(STK_B->nb[TOP_B - 1], STK_B->nb[0], STK_B->nb[TOP_B]) == 1)
-		{
-			stk_b->swap(stk_b);
-			solve_left(stk_a, stk_b, 2);
-		}
-		if (get_high(STK_B->nb[TOP_B - 1], STK_B->nb[0], STK_B->nb[TOP_B]) == 2)
-		{
-			stk_b->rev(stk_b);
-			solve_left(stk_a, stk_b, 1);
-		}*/
+			solve_left(stk_a, stk_b, 3);
+		}	
 		if (STK_B->nb[TOP_B] >= med)
-		{
 			stk_a->push(stk_b, stk_a, 0);
-		/*	while (solve_order(stk_a) != 1)
-			{
-				if (STK_A->nb[TOP_A] < STK_A->nb[TOP_A])
-				{
-					stk_a->swap(stk_a);
-					solve_right(stk_a, stk_b, 2);
-				}
-				stk_a->push(stk_a, stk_b, 1);
-			}*/
-		}
 		i++;
 	}
 	quick_left(stk_a, stk_b, (nb / 2 + nb % 2));
