@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   solve.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nhuber <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: nhuber <nhuber@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 17:28:36 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/28 20:03:59 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/29 15:38:41 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,11 @@ void	solve_right(t_stk *stk_a, t_stk *stk_b, int cmd)
 	if (cmd == 2 &&	(STK_B->nb[TOP_B - 1] > STK_B->nb[TOP_B]))
 	{
 		stk_b->swap(stk_b);
+		cmd += 3;
+	}
+	if (cmd == 3 && (get_median(stk_b) > STK_B->nb[TOP_B]))
+	{
+		stk_b->rot(stk_b);
 		cmd += 3;
 	}
 	cmd_add_right(stk_a, cmd);

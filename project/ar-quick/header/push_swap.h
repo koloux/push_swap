@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/28 19:06:50 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/29 15:55:53 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void			solve_left(t_stk *stk_a, t_stk *stk_b, int cmd);
 void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b);
 int				quick_right(t_stk *stk_a, t_stk *stk_b, int nb);
 int				quick_left(t_stk *stk_a, t_stk *stk_b, int nb);
-//void			bubble_right(t_stk *stk_a, t_stk *stk_b);
+void			bubble_right(t_stk *stk_a, t_stk *stk_b);
 void			bubble_left(t_stk *stk_a, t_stk *stk_b);
 int				get_min(t_stk *stack);
 int				get_max(t_stk *stack);

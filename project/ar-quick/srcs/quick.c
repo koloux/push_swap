@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/27 15:24:43 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/28 20:10:37 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/01/29 17:46:33 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,14 @@ int		quick_left(t_stk *stk_a, t_stk *stk_b, int nb)
 	int	med;
 	int	i;
 
-	//printf("QUICK-LEFT-|%d|-|%d|\n", get_median(stk_a), nb);
-	//info(stk_a, stk_b, TOP_A + 1);
 	if (nb <= 7)
 	{
-		cmd_join(&stk_a->op, "here");
 		bubble_left(stk_a, stk_b);
 		return (1);
 	}
 	med = get_median(stk_a);
 	i = 0;
-	while (i <= nb)
+	while (i <= nb && solve_order(stk_a) != 1)
 	{
 		if (STK_A->nb[TOP_A] >= med)
 		{
@@ -48,21 +45,14 @@ int		quick_right(t_stk *stk_a, t_stk *stk_b, int nb)
 	int	med;
 	int	i;
 
-	//printf("QUICK-RIGHT-|%d|-|%d|\n", get_median(stk_b), nb);
-	//info(stk_a, stk_b, TOP_B + 1);
-	if (nb <= 2)
+	if (nb <= 13)
 	{
-		if (STK_B->nb[TOP_B] < STK_B->nb[TOP_B - 1])
-		{
-			stk_b->swap(stk_b);
-			solve_left(stk_a, stk_b, 2);
-		}
-		//bubble_right(stk_a, stk_b);
+		bubble_right(stk_a, stk_b);
 		return (1);
 	}
 	med = get_median(stk_b);
 	i = 0;
-	while (i <= nb)
+	while (i <= nb && TOP_B > 0 && order_reverse(stk_b) != 1)
 	{
 		if (STK_B->nb[TOP_B] < med)
 		{

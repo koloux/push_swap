@@ -27,7 +27,7 @@ def test_n_time_x_elem(nbr, x):
 		lst = re.findall("\d+", str(output))
 		print ' '.join(lst)
 		output = subprocess.check_output([os.path.realpath("push_swap")] + lst)
-		print output
+		#print output
 		nbr_op = len(output.split()) 
 		if i == 0:
 			min_op = max_op = nbr_op
@@ -45,7 +45,7 @@ def test_n_time_x_elem(nbr, x):
 
 if (len(sys.argv) == 2):
 		test_all_permutations_for_n_elem(5)
-		test_n_time_x_elem(int(sys.argv[1]), 13)
-		#test_n_time_x_elem(int(sys.argv[1]), 500)
+		test_n_time_x_elem(int(sys.argv[1]), 100)
+		test_n_time_x_elem(int(sys.argv[1]), 500)
 else:
 		print "usage: ./script argument"
