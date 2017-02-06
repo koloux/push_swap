@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/29 15:40:16 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/06 09:55:27 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ static void	soft_end(t_stk *stk_a, t_stk *stk_b)
 		stk_a->swap(stk_a);
 		soft_secondary(stk_a, stk_b, 2);
 	}
-	if (order_reverse(stk_b) != 1)
+	while (order_reverse(stk_b) != 1)
 	{
 		max = get_max(stk_b);
 		if (stk_b->stk->nb[stk_b->stk->top] == max)
@@ -110,4 +110,6 @@ void		soft_solve(t_stk *stk_a, t_stk *stk_b)
 	solve_order_reverse(stk_a, stk_b);
 	soft_pivot(stk_a, stk_b);
 	soft_end(stk_a, stk_b);
+	while (TOP_B != -1)
+			stk_b->push(stk_b, stk_a, 0);
 }

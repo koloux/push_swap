@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/29 15:55:53 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/06 18:51:34 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int				get_max(t_stk *stack);
 int				get_median(t_stk *stack);
 int				get_high(int i, int j, int k);
 int				get_small(int i, int j, int k);
+int				check_median(t_stk *stack, int med);
+int				check_med(t_stk *stk_a, int nbelem);
 void			cmd_add_right(t_stk *stack, int cmd);
 void			cmd_add_left(t_stk *stack, int cmd);
 void			cmd_join(char **op, char *cmd);

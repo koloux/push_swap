@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 17:28:36 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/29 15:38:41 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/06 18:43:34 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,15 +44,13 @@ void	solve_left(t_stk *stk_a, t_stk *stk_b, int cmd)
 		stk_b->swap(stk_a);
 		cmd += 3;
 	}
-	if (cmd == 3 && STK_A->nb[TOP_A - 1] < STK_A->nb[TOP_A])
-	{
-		stk_b->rot(stk_a);
-		cmd += 3;
-	}
 	cmd_add_left(stk_a, cmd);
 }
 
 void	solve_stack(t_stk *stk_a, t_stk *stk_b)
 {
 	quick_left(stk_a, stk_b, TOP_A + 1);
+	//info(stk_a, stk_b, 100);
+	while (TOP_B > -1)
+		stk_a->push(stk_b, stk_a, 0);
 }

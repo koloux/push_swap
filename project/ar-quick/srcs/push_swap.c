@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 15:49:26 by nhuber            #+#    #+#             */
-/*   Updated: 2017/01/29 17:14:25 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/06 19:16:11 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	push_swap(int ac, char **av)
 	stk_b = stack_construct(NULL, ac);
 	if (stk_a->stk->top > 0 && solve_order(stk_a) != 1)
 	{
-		(ac <= 10) ? soft_solve(stk_a, stk_b) : solve_stack(stk_a, stk_b);
+		(ac <= 6) ? soft_solve(stk_a, stk_b) : solve_stack(stk_a, stk_b);
 		cmd_print(stk_a);
 	}
 	//info(stk_a, stk_b, 100);
