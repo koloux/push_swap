@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/27 15:24:43 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/06 19:16:13 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/06 19:47:25 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		quick_left(t_stk *stk_a, t_stk *stk_b, int nb)
 	int	i;
 	int c;
 
-	if (nb <= 2)
+	if (nb <= 7)
 	{
 		bubble_left(stk_a, stk_b);
 		if (STK_A->nb[TOP_A] > STK_A->nb[TOP_A - 1])

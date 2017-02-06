@@ -45,8 +45,7 @@ def test_n_time_x_elem(nbr, x):
 
 if (len(sys.argv) == 2):
 		test_all_permutations_for_n_elem(5)
-		test_n_time_x_elem(int(sys.argv[1]), 10)
-		test_n_time_x_elem(int(sys.argv[1]), 15)
-		test_n_time_x_elem(int(sys.argv[1]), 25)
+		test_n_time_x_elem(int(sys.argv[1]), 100)
+		#test_n_time_x_elem(int(sys.argv[1]), 500)
 else:
 		print "usage: ./script argument"
