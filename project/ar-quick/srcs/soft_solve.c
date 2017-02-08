@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/07 16:29:51 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/06 09:55:27 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/08 15:04:10 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,5 +111,5 @@ void		soft_solve(t_stk *stk_a, t_stk *stk_b)
 	soft_pivot(stk_a, stk_b);
 	soft_end(stk_a, stk_b);
 	while (TOP_B != -1)
-			stk_b->push(stk_b, stk_a, 0);
+		stk_b->push(stk_b, stk_a, 0);
 }

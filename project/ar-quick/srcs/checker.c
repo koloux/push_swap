@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 09:11:19 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/06 11:24:58 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/08 14:58:58 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,13 +54,30 @@ static void	do_instr(char *instr, t_stk *sa, t_stk *sb)
 		do_instrr(instr, sa, sb);
 }
 
-int			main(int ac, char **av)
+static int	checker(t_stk *stk_a, t_stk *stk_b)
 {
 	char	*buff;
+
+	buff = NULL;
+	while (get_next_line(STDIN_FILENO, &buff) > 0)
+	{
+		if (error_instr(buff) == 0)
+			return (0);
+		else
+			do_instr(buff, stk_a, stk_b);
+	}
+	if (TOP_B == -1)
+		(solve_order(stk_a) == 1 ? write(1, "OK\n", 3) : write(1, "KO\n", 3));
+	else
+		write(1, "KO\n", 3);
+	return (1);
+}
+
+int			main(int ac, char **av)
+{
 	t_stk	*stk_a;
 	t_stk	*stk_b;
 
-	buff = NULL;
 	ac--;
 	av++;
 	if (ac == 0 || error_nbr(ac, av) != 0)
@@ -69,17 +86,7 @@ int			main(int ac, char **av)
 	{
 		stk_a = stack_construct(av, ac);
 		stk_b = stack_construct(NULL, ac);
-		while (get_next_line(STDIN_FILENO, &buff) > 0)
-		{
-			if (error_instr(buff) == 0)
-				return (0);
-			else
-				do_instr(buff, stk_a, stk_b);
-		}
-		if (TOP_B == -1)
-			(solve_order(stk_a) == 1 ? write(1, "OK\n", 3) : write(1, "KO\n", 3));
-		else
-			write(1, "KO\n", 3);
+		checker(stk_a, stk_b);
 		clean_stack(&stk_a);
 		clean_stack(&stk_b);
 	}
