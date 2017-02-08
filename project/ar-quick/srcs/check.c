@@ -6,20 +6,22 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/06 11:28:50 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/06 19:02:23 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/08 12:30:45 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	check_median(t_stk *stack, int med)
+int	check_median(t_stk *stack, int med, int nb, int sens)
 {
 	int	i;
 
-	i = 0;
+	i = stack->stk->top - nb - 1;
 	while (i < stack->stk->top + 1)
 	{
-		if (stack->stk->nb[i] < med)
+		if (stack->stk->nb[i] < med && sens == 0)
+			return (1);
+		if (stack->stk->nb[i] >= med && sens == 1)
 			return (1);
 		i++;
 	}

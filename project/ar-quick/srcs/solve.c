@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 17:28:36 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/06 19:47:23 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/08 12:31:16 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,5 @@ void	solve_left(t_stk *stk_a, t_stk *stk_b, int cmd)
 void	solve_stack(t_stk *stk_a, t_stk *stk_b)
 {
 	quick_left(stk_a, stk_b, TOP_A + 1);
-	while (TOP_B > -1)
-		stk_a->push(stk_b, stk_a, 0);
+	//info(stk_a, stk_b, 100);
 }
