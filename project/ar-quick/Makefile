@@ -20,6 +20,7 @@ L_DIR = libft
 FILES = $(F_DIR)/cmd.c \
 		$(F_DIR)/check.c \
 		$(F_DIR)/error.c \
+		$(F_DIR)/error2.c \
 		$(F_DIR)/get.c \
 		$(F_DIR)/item.c \
 		$(F_DIR)/quick_left.c \

@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 18:15:55 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/08 15:01:02 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/09 17:23:13 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ typedef struct	s_stk
 int				order_reverse(t_stk *stack);
 t_stk			*stack_construct(char **param, int top);
 t_item			*item_construct(char **param, int top);
-void			soft_solve(t_stk *stk_a, t_stk *stk_b);
 int				solve_order(t_stk *stack);
 void			solve_order_reverse(t_stk *stk_a, t_stk *stk_b);
+void			solve_stack(t_stk *stk_a, t_stk *stk_b);
 int				quick_right(t_stk *stk_a, t_stk *stk_b, int nb);
 int				quick_left(t_stk *stk_a, t_stk *stk_b, int nb);
 int				get_min(t_stk *stack);
@@ -58,6 +58,7 @@ void			cmd_join(char **op, char *cmd);
 void			cmd_print(t_stk *stack);
 int				error_nbr(int ac, char **av);
 int				error_instr(char *instr);
+int				error_case(char **av);
 void			clean_stack(t_stk **stack);
 
 #endif

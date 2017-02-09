@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clean.c                                            :+:      :+:    :+:   */
+/*   error2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/06/29 09:32:12 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/09 16:41:39 by nhuber           ###   ########.fr       */
+/*   Created: 2017/02/09 16:47:49 by nhuber            #+#    #+#             */
+/*   Updated: 2017/02/09 16:56:17 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	clean_item(t_item **item)
+int		error_case(char **av)
 {
-	ft_memdel((void *)&(*item)->nb);
-	ft_memdel((void *)&(*item));
+	int	i;
+
+	i = 0;
+	while (av[i])
+	{
+		if (av[i][0] == '-' && av[i][1] == '\0')
+			return (1);
+		i++;
+	}
 	return (0);
-}
-
-void		clean_stack(t_stk **stack)
-{
-	t_item	**tmp;
-
-	tmp = &(*stack)->stk;
-	clean_item(tmp);
-	ft_memdel((void *)&(*stack)->op);
-	ft_memdel((void *)&(*stack));
 }
