@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 09:11:19 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/09 16:59:32 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/10 10:46:04 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ int			main(int ac, char **av)
 		clean_stack(&stk_a);
 		clean_stack(&stk_b);
 	}
+	free(&buff);
 	return (0);
 }
