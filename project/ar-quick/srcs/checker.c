@@ -6,7 +6,7 @@
 /*   By: nhuber <nhuber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/23 09:11:19 by nhuber            #+#    #+#             */
-/*   Updated: 2017/02/10 10:46:04 by nhuber           ###   ########.fr       */
+/*   Updated: 2017/02/17 10:41:34 by nhuber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,14 +54,21 @@ static void	do_instr(char *instr, t_stk *sa, t_stk *sb)
 		do_instrr(instr, sa, sb);
 }
 
-static int	checker(t_stk *stk_a, t_stk *stk_b, char **buff)
+static int	checker(t_stk *stk_a, t_stk *stk_b)
 {
-	while (get_next_line(STDIN_FILENO, buff) > 0)
+	char	*buff;
+
+	buff = NULL;
+	while (get_next_line(STDIN_FILENO, &buff) > 0)
 	{
-		if (error_instr(*buff) == 0)
+		if (error_instr(buff) == 0)
+		{
+			free(buff);
 			return (0);
+		}
 		else
-			do_instr(*buff, stk_a, stk_b);
+			do_instr(buff, stk_a, stk_b);
+		free(buff);
 	}
 	if (TOP_B == -1)
 		(solve_order(stk_a) == 1 ? write(1, "OK\n", 3) : write(1, "KO\n", 3));
@@ -74,21 +81,18 @@ int			main(int ac, char **av)
 {
 	t_stk	*stk_a;
 	t_stk	*stk_b;
-	char	*buff;
 
 	ac--;
 	av++;
-	buff = NULL;
 	if (ac == 0 || error_nbr(ac, av) != 0)
 		return (0);
 	else
 	{
 		stk_a = stack_construct(av, ac);
 		stk_b = stack_construct(NULL, ac);
-		checker(stk_a, stk_b, &buff);
+		checker(stk_a, stk_b);
 		clean_stack(&stk_a);
 		clean_stack(&stk_b);
 	}
-	free(&buff);
 	return (0);
 }
